@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300&subset=latin,latin-ext)
+$bg-color:  #454343
+$bg-image: url(img/jumbo.jpg)
+$text-color:  #2C2B2B
+$title-text-color: #fff
+$text-font: 'Oswald', sans-serif
+
+
+body
+	background-color: $bg-color
+	color: $text-color
+	font-family: $text-font
+	letter-spacing: 1px
+	float: none
+	margin: auto
+	text-align: left
+
+.container
+	max-width: 100%
+	margin: 0 auto
+
+.contain
+	width: 90%
+	border-radius: 4px
+	background-color: #fff
+	padding: 20px
+	margin-bottom: 20px
+	h1
+		text-align: left
+	h1, h3
+		padding-bottom: 10px
+		margin-left: 10px
+	p
+		padding-bottom: 10px
+		margin-left: 10px
+		font-size: 20px
+
+.navbar 
+	background-color: rgba(0, 0, 0, 0.7)
+	border: 0
+
+.jumbotron
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), $bg-image
+	background-size: cover
+	height: 95vh
+	width: 100%
+	background-color: $bg-color	
+	padding-bottom: 50px
+	margin-bottom: 50px
+	.slogan
+
+		width: 100%
+		height: auto
+		padding-top: 3vh
+		padding-bottom: 20px
+		color: $title-text-color
+		text-align: center
+		img
+			margin: 0 auto
+			margin-top: 20px
+			width: 250px
+			height: 250px
+			border-radius: 50%
+			border-width: 5px
+			border-style: solid
+			border-color: $text-color
+
+#about
+	a
+		cursor: help
+
+.skilss
+	text-align: center
+	margin-bottom: 20px
+	display: block
+	img
+		height: 90px
+		width: auto
+	img, .stars
+		cursor: context-menu
+		transition: 0.5s
+		&:hover
+			transform: scale(1.20)
+			transition: 0.5s
+	.stars
+		letter-spacing: -2px
+		.star0
+			font-size: 40px
+			color: #808080
+
+		.star1
+			@extend .star0
+			color: #FFD700
+
+.portfolio
+	text-align: center
+	text-align: left
+	h1
+		text-align: left
+	.row
+		padding-bottom: 0
+		img 
+			float: none
+
+			margin: 0 auto
+			max-height: 350px
+			width: 100%
+			display: block
+		.photo
+			padding: 0
+			cursor: pointer
+			display: block
+			overflow: hidden
+			position: relative
+			&:hover .layer 
+				opacity: 1
+				cursor: pointer
+			.layer 
+				top: 0
+
+				position: absolute
+				display: flex
+				align-items: center
+				text-align: center
+				justify-content: center
+				height: 350px
+				width: 100%
+				background-color: rgba(50,50,50,0.6)
+				opacity: 0
+				transition: 1s
+				i[class*="fa"], i[class*="fa"]:hover 
+					font-size: 50px
+					width: 60px
+					height: 60px
+					padding: 5px
+					background-color: #FFFFFF
+					border-radius: 15%
+					color: #2D2F2E
+					margin: 10px
+					&:hover 
+		 				background: #4099FF
+
+
+footer 
+	text-align: center
+	width: 100%
+	height: auto
+	display: block
+	border-width: 5px 0 0 0
+	border-color: #fff
+	border-style: solid
+	color: $title-text-color
+	padding: 20px 0
+	line-height: 50px
+
+	.icon-btn 
+		float: none
+		height: 45px
+		width: 45px
+		border: 0
+		color: #ffffff
+		cursor: pointer
+		font-size: 30px
+		line-height: 35px
+		border-radius: 40px
+		margin: 0 5px
+		vertical-align: middle
+		transition: 0.5s
+		&:hover 
+			transform: scale(1.20)
+			color: #FFFFFF
+			transition: 0.4s
+		
+	.linkedin
+		color: #4099FF
+		&:hover 
+			background: #4099FF
+			color: #FFFFFF
+	 
+	.facebook 
+		color: #0077B5
+		&:hover 
+			background: #0077B5
+			color: #FFFFFF	
+
+
+	.github 
+		color: #4183C4
+		&:hover
+			background: #4183C4
+			color: #FFFFFF
