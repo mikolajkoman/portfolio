@@ -140,13 +140,13 @@ footer {
   line-height: 50px; }
   footer .icon-btn {
     float: none;
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     border: 0;
     color: #ffffff;
     cursor: pointer;
     font-size: 30px;
-    line-height: 35px;
+    line-height: 40px;
     border-radius: 40px;
     margin: 0 5px;
     vertical-align: middle;
@@ -159,11 +159,6 @@ footer {
     color: #4099FF; }
     footer .linkedin:hover {
       background: #4099FF;
-      color: #FFFFFF; }
-  footer .facebook {
-    color: #0077B5; }
-    footer .facebook:hover {
-      background: #0077B5;
       color: #FFFFFF; }
   footer .github {
     color: #4183C4; }
