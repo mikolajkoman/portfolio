@@ -1,3 +1,35 @@
+    $(document).ready(function(){
+        $(document.body).fadeIn(5500);
+        $(".slogan").fadeIn(10000);
+        return 0;
+});
+
+$( window ).scroll(function() {
+     console.log(document.body.scrollTop);
+  if ( 600 <= document.body.scrollTop && document.body.scrollTop <= 900) {
+
+ console.log(document.body.scrollTop);
+    $(document).ready(function(){
+        $(".diva").animate({left: '-200px'}, (1000)),
+        $(".diva1").fadeIn(3600);
+        return 0;
+    });
+ console.log("Great!");
+    }
+ //  else if ( document.body.scrollTop >= 901) {
+
+ // console.log(document.body.scrollTop);
+ //        $(".diva").fadeOut(100),
+ //        $(".diva1").fadeOut(1000),
+ //        $(".diva").fadeOut(100),
+ // console.log("Hi");
+ //    }
+
+// document.documentElement.scrollTop
+
+
+});
+
 $(function() {
     var check_1 = (Math.floor(Math.random() * 9) + 1).toString(),
         check_2 = (Math.floor(Math.random() * 9) + 1).toString(),

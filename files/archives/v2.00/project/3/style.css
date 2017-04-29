@@ -1,0 +1,112 @@
+
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+body{
+	background-color: #C8E4E8;
+}
+.siteWidth {
+  float: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.dropdown-menu{
+	background-color: #222222;
+}
+.dropdown-menu li a, .dropdown-menu li:hover a {
+	color: #ffffff;
+}
+.dropdown-menu li:hover a{
+	background-color: #080808;
+}
+nav span{
+	font-size: 30px;
+	letter-spacing: 0.1em;
+	text-decoration: underline overline ;
+	text-transform: uppercase;	
+}
+.jumbotron  {
+	background: url("https://static.pexels.com/photos/29044/pexels-photo-medium.jpg");
+	background-size: cover;
+	height: calc(100vh - 50px);
+	width: 100%;
+	background-color: #3498db;	
+	margin-bottom: 10px;
+	
+}
+.slogan {
+	margin: 10vh auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	max-width: 800px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 5% 10% 2% 10%;
+	border-radius: 0 0 50% 50%;
+	text-shadow: 1px 1px #ccc;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.slogan h1{
+	font-size: 74px;
+	letter-spacing: 0.1em;
+	margin: 5px;
+}
+.slogan span{
+	text-decoration: underline overline ;	
+}
+.slogan small {
+	display: block;
+	color: #fff;	
+}
+.slogan button{
+	font-size: 24px;
+	margin: 10px;
+}
+.slider{
+	margin: 50px auto;
+
+}
+img[class*="example"]{
+	height: 400px;
+	background-size: cover;
+	display: block;
+	margin: 0 auto;
+}
+[class*="example"]{
+
+	min-height: 400px;
+
+}
+.example-1 {
+	background: url("https://static.pexels.com/photos/7112/woman-typing-writing-windows-medium.jpg");
+	background-size: cover;
+
+}
+.example-2 {
+	background: url("https://static.pexels.com/photos/70292/pexels-photo-70292-medium.jpeg");
+	background-size: cover;
+}
+.example-3 {
+	background: url("https://static.pexels.com/photos/7369/startup-photos-medium.jpg");
+	background-size: cover;
+}
+.example-4 {
+	background: url("https://static.pexels.com/photos/7376/startup-photos-medium.jpg");
+	background-size: cover;
+}
+.example-5 {
+	background: url("https://static.pexels.com/photos/34600/pexels-photo-medium.jpg");
+	background-size: cover;
+}
+.tab-content{
+	background-color: #ffffff;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.tab-content span{
+	font-size: 60px;
+}
+#btnfix{
+	overflow: hidden;
+}
+#btnbtn{
+	text-align: center;
+	margin-bottom: 10px;
+}

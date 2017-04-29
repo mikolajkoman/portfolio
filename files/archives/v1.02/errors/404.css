@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300&subset=latin,latin-ext);
+body{
+	margin: 0;
+}
+.jumbotron {
+	width: 100%;
+	height: 100vh;
+	padding-top: 70vh;
+	box-sizing: border-box;
+	text-align: center;
+	background-image: url(https://static.pexels.com/photos/132340/pexels-photo-132340-large.jpeg);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	border-radius: 0 50% 0 0;
+}
+h1 {
+	margin: 0;
+	font-size: 38px;
+	font-weight: 500;
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	text-shadow:5px 5px 0 black;
+}
+a{
+	text-decoration: none;
+}
