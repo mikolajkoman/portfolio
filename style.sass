@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,900&subset=latin-ext)
 
 $bg-color: #454343
-$bg-image: url(img/jumbo_kopia1.jpg)
+$bg-image: url(img/jumbo.jpg)
 $bg-image1: url(img/tlo.jpg)
 $bg-image2: url(img/tlo2.jpg)
 $text-color:  #2C2B2B
@@ -21,6 +21,7 @@ $project-5-img: url(project/5/photo.png)
 $project-6-img: url(project/6/photo.png)
 $project-7-img: url(project/7/photo.png)
 $project-8-img: url(project/8/photo.png)
+$project-9-img: url(project/9/photo.png)
 
 body
 	background-color: $bg-color
@@ -154,12 +155,14 @@ body
 		text-transform: uppercase
 		font-size: 50px
 		color: $main-text-color
+		text-shadow: 2px 0px 2px black, 0px 0px 10px white, 0 0 5px darkblue
 	img
 		margin: 0 auto
 		margin-top: 20px
 		width: 250px
 		height: 250px
 		border-radius: 50%
+		box-shadow: -3px 10px 10px 0 rgba(0, 0, 0, 0.7), -2px 15px 20px 0 rgba(0, 0, 0, 0.19)
 	p
 		color: $main-text-color
 		border-radius: 15px
@@ -170,6 +173,7 @@ body
 	a
 		cursor: help
 		color: #fff
+
 #skills
 	@extend .jumbotron
 	background-image: none
@@ -178,6 +182,113 @@ body
 	padding: 10% 0
 	.row:first-of-type
 		margin-bottom: 10%
+
+	.circleSitck
+		position: absolut
+		color: #70869E
+		margin-top: 15px
+		margin-left: 49%
+		width: 1px
+		height: 160px
+		background: transparent
+		z-index: -6
+		border-left: dashed
+
+
+	.circle2 
+		position: relative
+		top: 3px
+		margin: auto
+		text-align: center
+		width: 90px
+		height: 90px
+		background: #70869E
+		background: -webkit-radial-gradient( #5A6B7E, #70869E) /* Safari 5.1-6.0 */
+		background: -o-radial-gradient(#5A6B7E, #70869E) /* For Opera 11.6 to 12.0 */
+		background: -moz-radial-gradient( #5A6B7E, #70869E) /* For Firefox 3.6 to 15 */
+		background: radial-gradient( #5A6B7E, #70869E) /* Standard syntax (must be last) */
+		-moz-border-radius: 50%
+		-webkit-border-radius: 50%
+		border-radius: 50%
+		z-index: 2
+
+	.circle
+		cursor: pointer
+		display: inline-block
+		position: relative
+		margin: 10px
+		width: 100px
+		height: 100px
+		background: gold 
+		-moz-border-radius: 50%
+		-webkit-border-radius: 50%
+		border-radius: 50%
+		border: solid 2px #70869E
+		z-index: 6
+		/*   box-shadow: 0px 0 10px red inset */
+		box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.7), -2px 15px 20px 0 rgba(0, 0, 0, 0.19)
+		transition:  1s
+		&:nth-child(even)
+			bottom: -80px
+			.circleSitck
+				height: 80px
+		&:nth-child(1)
+			background-color: #70869E
+			&:hover
+				background-color: #D7502B
+				box-shadow: 0px 5px 20px 0 rgba(215, 80, 43, 0.7), -2px 15px 20px 0 rgba(215, 80, 43, 0.19)
+			.img
+				content: url("http://mikolajkoman.pl/img/HTML5.png")
+		&:nth-child(2)
+			background-color: #70869E
+			&:hover
+				background-color: #C46B95
+				box-shadow: 0px 5px 20px 0 rgba(196, 107, 149, 0.7), -2px 15px 20px 0 rgba(196, 107, 149, 0.19)
+			.img
+				content: url("http://mikolajkoman.pl/img/sass.png")
+		&:nth-child(3)
+			background-color: #70869E
+			&:hover
+				background-color: #4A366C
+				box-shadow: 0px 5px 20px 0 rgba(74, 54, 108, 0.7), -2px 15px 20px 0 rgba(74, 54, 108, 0.19)
+			.img
+				content: url("http://mikolajkoman.pl/img/bootstrap.png")
+		&:nth-child(4)
+			background-color: #70869E
+			&:hover
+				background-color: #061D2D
+				box-shadow: 0px 5px 20px 0 rgba(6, 29, 45, 0.7), -2px 15px 20px 0 rgba(6, 29, 45, 0.19)
+			.img
+				content: url("http://mikolajkoman.pl/img/git.png")
+		&:nth-child(5)
+			background-color: #70869E
+			&:hover
+				background-color: #D8A035
+				box-shadow: 0px 5px 20px 0 rgba(216, 160, 53, 0.7), -2px 15px 40px 0 rgba(216, 160, 53, 0.19)
+			.img
+				content: url("http://mikolajkoman.pl/img/js.png")
+	  
+	.img 
+		
+		position: relative
+		top: 15px
+		width: 60px
+		height: 60px
+	.main_contain
+		margin: 0 auto
+	.contain2
+		max-width: 640px
+		margin: 0 20px
+		margin: 0 auto
+	.container2
+		margin: 0 auto
+		position: relative
+		color: #70869E
+		margin-top: 150px
+		width: 680px
+		height: 200px
+		background: #ecf0f1
+		border: solid #70869E
 .skilss
 
 	text-align: center
@@ -252,9 +363,11 @@ body
 				background: $project-7-img 0/cover no-repeat
 			.p8
 				background: $project-8-img 0/cover no-repeat
+			.p9
+				background: $project-9-img 0/cover no-repeat
 			.photo
 				padding: 0
-				cursor: pointer
+				cursor: pointer 
 				display: inline-block
 				position: relative
 				height: 350px
@@ -310,7 +423,8 @@ body
 	@extend .jumbotron
 	background-image: $bg-image1
 	padding-bottom: 0
-	padding: 10% 0
+	min-height: 100vh
+	padding: 5% 0
 	h2
 		
 		padding: 0 0.9vw
@@ -321,7 +435,7 @@ body
 		color: $main-text-color
 	.container
 		max-width: 370px
-		height: 360px
+		height: auto
 
 footer 
 	text-align: center
@@ -366,8 +480,196 @@ footer
 		&:hover
 			background: #4183C4
 			color: #FFFFFF
+.service-jumbo
+	button
+		text-transform: uppercase
+		font-size: 24px
+		margin: 10px
+	.btn-primary
+		color: $text-color !important
+		background-color: transparent !important
+		border: 2px solid $text-color !important
+		transition: 0.5s
+		&:hover
+			color: #fff !important
+			background-color: $text-color !important
+			border-color: $text-color !important
+			transition: 0.5s
+.service-about
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(https://images.pexels.com/photos/90807/pexels-photo-90807.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)
+	background-size: cover
+	background-position: center
+	font-family: $text-font 
+	margin: 0 auto
+	min-height: 100vh
+	width: 100%
+	padding-top: 10vh
+	div
+		margin: 30px 0
+	h2, h3
+		text-align: center
+		
+		font-size: 60px
+		color: #fff
+
+.service 
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url(https://images.pexels.com/photos/40120/pexels-photo-40120.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)
+	background-size: cover
+	background-position: center
+	margin: 0 auto
+	div
+		margin: 30px 0
+	h2
+		text-align: center
+
+		font-size: 40px
+	.column
+		margin: 15px
+		.column-head
+			margin: 0 auto
+			text-align: center
+			.fa
+				text-align: center
+				margin: 0 auto
+				width: 150px
+				height: 150px
+				border-radius: 50%
+				background-color: rgba(52, 73, 94, 0.6)
+				float: none
+				border: 0
+				color: #ffffff
+				cursor: pointer
+				font-size: 80px
+				line-height: 150px
+				vertical-align: middle
+				align-items: center
+				justify-content: center 
+
+		.pack
+			cursor: pointer
+			margin: 0 auto
+			border-radius: 15px
+			border: 1px dashed $text-color !important
+			background-color: rgba(255, 255,255, 0.4)
+			padding: 5px
+			margin-top: 20px
+			width: 80%
+			text-align: center
+			h3
+				text-align: center
+				font-size: 40px
+				a
+					text-decoration: none
+					color: $text-color
+					&:hover
+						color: $text-color
+			p
+				margin: 0 auto
+				width: 80%
+				font-size: 16px
+			
+.service-price
+	background-color: #fff
+	color: #fff
+	min-height: 750px
+	.panel-group
+		width: 80%
+		margin: 20px auto
+		a
+			text-decoration: none
+			color: $text-color
+
+	.plan
+		max-width: 300px
+		padding: 0
+		text-align: center
+		margin: 5px 15px
+		.plan-header
+			padding: 10px
+		.standard
+			background-color: rgba(149, 165, 166, 0.7)
+		.extra
+			background-color: #E7AC44
+		.premium
+			background-color: #27B399
+			
+		.plan-price
+			background-color: rgba(44, 48, 52, 0.7)
+			padding: 10px
+			font-weight: bold
+			span
+				display: inline-block
+				margin-top: 9px
+				vertical-align: top
+				font-size: 20px
+		.plan-option
+			border: 1px solid grey 
+			p
+				color: #000
+				padding: 5px
+				border-bottom: 1px dashed grey
+			input
+				margin: 5px
+				text-align: center
+				margin: 5px auto
+
+	h3, p
+		text-align: center
+	h2
+		font-size: 50px
+	h2.title
+		color: #000
+		font-size: 30px
+	.p1
+		margin: 0 auto
+		width: 300px
+		height: 300px
+		background: #fff
+		background-size: cover
+		background-position: center
+		border: 1px solid silver
+		&:hover
+			border: 2px solid silver
+		.p_img
+			width: 100%
+			height: 100%
+			.price_sign
+				position: absolute
+				top: 0
+				left: 150px
+				display: block
+				text-align: center
+				background: url(img/price_bg.png) 0 0px no-repeat
+				width: 42px
+				height: 41px
+				color: #fff
+				font: bold 18px/37px "Comfortaa", Arial, Helvetica, sans-serif
+			img
+				width: 0
+				height: 0	
+	.p2
+
+		@extend .p1
+		background: #fff
+	.shop
+		margin-bottom: 50px
+
+.simpleCart_items img
+	max-width: 64px
+	max-height: 64px
+
+.item-quantity, .item-decrement, .item-increment 
+	text-align: center
 
 @media only screen and (max-width: 992px)
 
 	.slogan
 		margin: 25% 15vw !important
+
+@media only screen and (max-width: 767px)
+	
+	ul.navbar-right
+		background-color: rgba(0, 0, 0, 0.7)
+		li
+			ul.dropdown-menu
+				background-color: rgba(0, 0, 0, 0.7) !important

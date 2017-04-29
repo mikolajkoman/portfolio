@@ -1,7 +1,4 @@
 $(document).ready(function () {
-	$(function () {
-	  $('[data-toggle="tooltip"]').tooltip()
-	})
  $('a[href^="#"]').on('click', function(event) {
  
  var target = $( $(this).attr('href') );

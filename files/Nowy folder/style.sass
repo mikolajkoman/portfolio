@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300&subset=latin,latin-ext)
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin-ext,latin);
+$bg-color:  #454343
+$bg-image: url(img/jumbo.jpg)
+$text-color:  #2C2B2B
+$title-text-color: #fff
+$text-main-font: 'Lato', sans-serif
+$text-font: 'Oswald', sans-serif
+$project-0-img: url(project/0/photo.png)
+$project-1-img: url(project/1/photo.png)
+$project-2-img: url(project/2/photo.png)
+$project-3-img: url(project/3/photo.png)
+$project-4-img: url(project/4/photo.png)
+$project-5-img: url(project/5/photo.png)
+$project-6-img: url(project/6/photo.png)
+$project-7-img: url(project/7/photo.png)
+$project-8-img: url(project/8/photo.png)
+
+
+body
+	background-color: $bg-color
+	color: $text-color
+	font-family: $text-main-font
+	letter-spacing: 1px
+	float: none
+	margin: 0 auto
+	text-align: left
+
+.container
+	
+	max-width: 1200px
+	margin: 0 auto
+
+.contain
+	width: 90%
+	border-radius: 4px
+	background-color: #fff
+	margin-bottom: 20px
+	h1
+		text-align: left
+	h1, h3
+		padding-bottom: 10px
+		margin-left: 10px
+	p
+		padding-bottom: 10px
+		margin-left: 10px
+		font-size: 20px
+
+.navbar 
+	background-color: rgba(0, 0, 0, 0.7)
+	border: 0
+
+.jumbotron
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.7) 100%), $bg-image
+	background-size: cover
+	font-family: $text-font
+	height: 95vh
+	width: 100%
+	background-color: $bg-color	
+	padding-bottom: 50px
+	margin-bottom: 50px
+	.slogan
+
+		width: 100%
+		height: auto
+		padding-top: 3vh
+		padding-bottom: 20px
+		color: $title-text-color
+		text-align: center
+		img
+			margin: 0 auto
+			margin-top: 20px
+			width: 250px
+			height: 250px
+			border-radius: 50%
+			border-width: 5px
+			border-style: solid
+			border-color: $text-color
+
+#about
+	a
+		cursor: help
+
+.skilss
+	text-align: center
+	margin-bottom: 20px
+	display: block
+	img
+		height: 70px
+		width: auto
+	img, .prog
+		cursor: context-menu
+		transition: 0.5s
+		&:hover
+			transform: scale(1.20)
+			transition: 0.5s
+	.prog
+		letter-spacing: -2px
+		.prog0
+			font-size: 30px
+			color: #808080
+
+		.prog1
+			@extend .prog0
+			color: #008000
+
+.portfolio
+	text-align: center
+	text-align: left
+	h1
+		text-align: left
+	
+		
+	.row
+		
+		padding-bottom: 0
+
+			.p0
+				background: $project-0-img 0/cover no-repeat
+			.p1
+				background: $project-1-img 0/cover no-repeat
+			.p2
+				background: $project-2-img 0/cover no-repeat
+			.p3
+				background: $project-3-img 0/cover no-repeat
+			.p4
+				background: $project-4-img 0/cover no-repeat
+			.p5
+				background: $project-5-img 0/cover no-repeat
+			.p6
+				background: $project-6-img 0/cover no-repeat
+			.p7
+				background: $project-7-img 0/cover no-repeat
+			.p8
+				background: $project-8-img 0/cover no-repeat
+			.photo
+				padding: 0
+				cursor: pointer
+				display: inline-block
+				position: relative
+				height: 350px
+				width: 100%
+				margin: 15px 15px 15px 0
+				&:hover .layer 
+					opacity: 1
+					cursor: pointer
+								
+				p
+
+					color: $text-color
+					font-weight: bold
+					border-radius: 15px
+					position: absolute
+					bottom: 5px
+					width: 95%
+					margin-left: 0
+					margin: 3%
+					display: flex
+					align-items: center
+					text-align: center
+					justify-content: center
+					background-color: rgba(255, 248, 255, 0.7)
+					font-weight: bold
+					font-size: 20px
+					letter-spacing: 0.1em
+
+				.layer 
+					top: 0
+					position: absolute
+					display: flex
+					align-items: center
+					text-align: center
+					justify-content: center
+					height: 350px
+					width: 100%
+					background-color: rgba(50,50,50,0.6)
+					opacity: 0
+					transition: 1s
+					i[class*="fa"], i[class*="fa"]:hover 
+						font-size: 50px
+						width: 60px
+						height: 60px
+						padding: 5px
+						background-color: rgba(255, 255, 255, 0.7)
+						border-radius: 15%
+						color: #2D2F2E
+						margin: 10px
+						&:hover 
+							background-color: #fff
+#contact .container
+	width: 370px
+	height: 360px
+
+footer 
+	text-align: center
+	width: 100%
+	height: auto
+	display: block
+	border-width: 5px 0 0 0
+	border-color: #fff
+	border-style: solid
+	color: $title-text-color
+	padding: 20px 0
+	line-height: 50px
+
+	.icon-btn
+
+		align-items: center
+		justify-content: center 
+		float: none
+		height: 50px
+		width: 50px
+		border: 0
+		color: #ffffff
+		cursor: pointer
+		font-size: 30px
+		line-height: 40px
+		border-radius: 40px
+		margin: 0 5px
+		vertical-align: middle
+		transition: 0.5s
+		&:hover 
+			transform: scale(1.20)
+			color: #FFFFFF
+			transition: 0.4s
+		
+	.linkedin
+		color: #4099FF
+		&:hover 
+			background: #4099FF
+			color: #FFFFFF
+	.github 
+		color: #4183C4
+		&:hover
+			background: #4183C4
+			color: #FFFFFF
