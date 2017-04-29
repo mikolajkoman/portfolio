@@ -6,15 +6,7 @@ $text-color:  #2C2B2B
 $title-text-color: #fff
 $text-main-font: 'Lato', sans-serif
 $text-font: 'Oswald', sans-serif
-$project-0-img: url(project/0/photo.png)
-$project-1-img: url(project/1/photo.png)
-$project-2-img: url(project/2/photo.png)
-$project-3-img: url(project/3/photo.png)
-$project-4-img: url(project/4/photo.png)
-$project-5-img: url(project/5/photo.png)
-$project-6-img: url(project/6/photo.png)
-$project-7-img: url(project/7/photo.png)
-$project-8-img: url(project/8/photo.png)
+
 
 body
 	background-color: $bg-color
@@ -108,89 +100,67 @@ body
 	text-align: left
 	h1
 		text-align: left
-	
-		
 	.row
-		
+		margin: 0 auto
 		padding-bottom: 0
-		div
-			.p0
-				background: $project-0-img 0/cover no-repeat
-			.p1
-				background: $project-1-img 0/cover no-repeat
-			.p2
-				background: $project-2-img 0/cover no-repeat
-			.p3
-				background: $project-3-img 0/cover no-repeat
-			.p4
-				background: $project-4-img 0/cover no-repeat
-			.p5
-				background: $project-5-img 0/cover no-repeat
-			.p6
-				background: $project-6-img 0/cover no-repeat
-			.p7
-				background: $project-7-img 0/cover no-repeat
-			.p8
-				background: $project-8-img 0/cover no-repeat
-			.photo
-				padding: 0
+		img 
+			float: none
+			margin: 0 auto
+			max-height: 350px
+			width: 100%
+			display: block
+		
+		.photo
+			top: 0
+			margin: 0 auto
+			margin-right: 30px
+			display: flex
+			text-align: center
+			cursor: pointer
+			display: block
+			position: relative
+			width: 350px
+			&:hover .layer 
+				opacity: 1
 				cursor: pointer
-				display: inline-block
-				position: relative
+			p
+				color: $text-color
+				font-weight: bold
+			img
+				display: block
+				height: 350px
+				width: 350px
+				padding: 0
+
+
+			.layer 
+				top: 0
+				margin: 0 auto
+				position: absolute
+				display: flex
+				align-items: center
+				text-align: center
+				justify-content: center
 				height: 350px
 				width: 100%
-				margin: 15px 15px 15px 0
-				&:hover .layer 
-					opacity: 1
-					cursor: pointer
-								
-				p
+				background-color: rgba(50,50,50,0.6)
+				opacity: 0
+				transition: 1s
+				i[class*="fa"], i[class*="fa"]:hover 
+					font-size: 50px
+					width: 60px
+					height: 60px
+					padding: 5px
+					background-color: #FFFFFF
+					border-radius: 15%
+					color: #2D2F2E
+					margin: 10px
+					&:hover 
+		 				background: #4099FF
 
-					color: $text-color
-					font-weight: bold
-					border-radius: 15px
-					position: absolute
-					bottom: 5px
-					width: 95%
-					margin-left: 0
-					margin: 3%
-					display: flex
-					align-items: center
-					text-align: center
-					justify-content: center
-					background-color: rgba(255, 248, 255, 0.7)
-					font-weight: bold
-					font-size: 20px
-					letter-spacing: 0.1em
-
-				.layer 
-					top: 0
-					position: absolute
-					display: flex
-					align-items: center
-					text-align: center
-					justify-content: center
-					height: 350px
-					width: 100%
-					background-color: rgba(50,50,50,0.6)
-					opacity: 0
-					transition: 1s
-					i[class*="fa"], i[class*="fa"]:hover 
-						font-size: 50px
-						width: 60px
-						height: 60px
-						padding: 5px
-						background-color: rgba(255, 255, 255, 0.7)
-						border-radius: 15%
-						color: #2D2F2E
-						margin: 10px
-						&:hover 
-							background-color: #fff
-#contact 
-	height: 500px
-	.container
-		max-width: 370px
-		height: 360px
+#contact .container
+	width: 370px
+	height: 360px
 
 footer 
 	text-align: center

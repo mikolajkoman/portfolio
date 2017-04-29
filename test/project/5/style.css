@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Expletus+Sans);
+body {
+  background-color: #454343;
+  color: #ffffff;
+  font-family: "Expletus Sans", sans-serif;
+  float: none;
+    float-max-width: 1200px;
+    float-margin: 0 auto; }
+
+.slogan {
+  margin: 10vh auto;
+  max-width: 800px;
+  text-transform: uppercase;
+  text-align: center; }
+
+#carousel {
+  margin: 0 auto;
+  margin-top: 20vh;
+  text-align: center;
+  height: 300px;
+  width: 400px;
+  border-style: solid;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; }
+  #carousel ul {
+    display: block;
+    width: 2800px;
+    height: 300px;
+    padding-left: 0; }
+  #carousel li {
+    float: left;
+    position: relative;
+    display: block;
+    background-size: cover;
+    list-style: none; }
+    #carousel li img {
+      display: block;
+      height: 300px;
+      width: 400px; }
+  #carousel .dots {
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    top: 90%;
+    background-color: rgba 0, 0, 0, 0.1; }
+    #carousel .dots button {
+      border-radius: 50%;
+      text-decoration: none;
+      margin: 0 auto;
+      background-color: rgba 0, 0, 0, 0.1;
+      color: #000;
+      margin-right: 5px; }
+
+/*# sourceMappingURL=style.css.map */
