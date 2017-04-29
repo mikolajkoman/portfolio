@@ -18,10 +18,10 @@
             #contactform fieldset{width:100%;}
             #contactform fieldset label{display:block;font-size:15px;color:#46494f;margin-bottom:12px;}
             #contactform fieldset input[type=text],
-            #contactform fieldset input[type=email]{font-family:Roboto,sans-serif;color:#acb4bd;font-size:14px;border:1px solid #d8dee5;box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);padding:9px 14px;width:460px;max-width:100%;box-sizing:border-box;-moz-box-sizing:border-box;height:40px;margin-bottom:10px;}
+            #contactform fieldset input[type=email]{font-family:Roboto,sans-serif;color:#acb4bd;font-size:14px;border:1px solid #d8dee5;box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);padding:9px 14px;width:460px;max-width:100%;box-sizing:border-box;-moz-box-sizing:border-box;height:40px;margin-bottom:10px; background-color: transparent;}
             #contactform fieldset input[type=text]:hover,#contactform fieldset input[type=email]:hover{color:#61656d;border-color:#acb4bd;}
             #contactform fieldset input[type=text]:focus,#contactform fieldset input[type=email]:focus{color:#61656d;border-color:#196abc;}
-            #contactform fieldset textarea{font-family:Lato,sans-serif;color:#acb4bd;font-size:14px;border:1px solid #d8dee5;box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);padding:9px 14px;width:460px;max-width:100%;box-sizing:border-box;-moz-box-sizing:border-box;height:160px;margin-bottom:10px;resize:none;}
+            #contactform fieldset textarea{font-family:Lato,sans-serif;color:#acb4bd;font-size:14px;border:1px solid #d8dee5;box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);padding:9px 14px;width:460px;max-width:100%;box-sizing:border-box;-moz-box-sizing:border-box;height:160px;margin-bottom:10px;resize:none; background-color: transparent;}
             #contactform fieldset textarea:hover{color:#61656d;border-color:#acb4bd;}
             #contactform fieldset textarea:focus{color:#61656d;border-color:#196abc;}
             #contactform fieldset .form-field-error{color:#ff6600;font-style:italic;font-size:12px;margin-bottom:15px;margin-top:-5px;line-height:1.3em;}

@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Lato&subset=latin-ext,latin);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,900&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,900&subset=latin-ext);
 body {
   background-color: #454343;
   color: #2C2B2B;
@@ -13,53 +15,139 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
-.contain {
-  width: 90%;
-  border-radius: 4px;
-  background-color: #fff;
-  margin-bottom: 20px; }
-  .contain h1 {
-    text-align: left; }
-  .contain h1, .contain h3 {
-    padding-bottom: 10px;
-    margin-left: 10px; }
-  .contain p {
-    padding-bottom: 10px;
-    margin-left: 10px;
-    font-size: 20px; }
+.contain h2 {
+  text-align: left; }
 
-.navbar {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 0; }
+.contain h2, .contain h3 {
+  padding-bottom: 10px;
+  margin-left: 10px; }
 
-.jumbotron {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.7) 100%), url(img/jumbo.jpg);
+.contain p {
+  padding-bottom: 10px;
+  margin-left: 10px;
+  font-size: 20px; }
+
+.row {
+  margin-right: 0;
+    margin-right-margin-left: 0; }
+
+.jumbotron, #about, #skills, #contact {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(img/jumbo_kopia1.jpg);
   background-size: cover;
-  font-family: "Oswald", sans-serif;
-  height: 95vh;
+  background-position: center;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  min-height: 100vh;
   width: 100%;
   background-color: #454343;
-  padding-bottom: 50px;
-  margin-bottom: 50px; }
-  .jumbotron .slogan {
-    width: 100%;
+  padding-top: 0;
+  padding-bottom: 50px; }
+  .jumbotron .navbar, #about .navbar, #skills .navbar, #contact .navbar {
+    background-color: transparent;
+    height: 67px;
+    padding: 3%;
+    border: 0; }
+    .jumbotron .navbar img, #about .navbar img, #skills .navbar img, #contact .navbar img {
+      margin-right: 5px;
+      width: 48px;
+      height: 48px;
+      float: left; }
+    .jumbotron .navbar .navbar-brand, #about .navbar .navbar-brand, #skills .navbar .navbar-brand, #contact .navbar .navbar-brand, .jumbotron .navbar ul.navbar-right, #about .navbar ul.navbar-right, #skills .navbar ul.navbar-right, #contact .navbar ul.navbar-right {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 20px;
+      padding: 5px 20px; }
+    .jumbotron .navbar ul.navbar-right, #about .navbar ul.navbar-right, #skills .navbar ul.navbar-right, #contact .navbar ul.navbar-right {
+      padding: 0;
+      font-weight: normal;
+      line-height: 26px; }
+      .jumbotron .navbar ul.navbar-right li, #about .navbar ul.navbar-right li, #skills .navbar ul.navbar-right li, #contact .navbar ul.navbar-right li {
+        height: 35px; }
+        .jumbotron .navbar ul.navbar-right li:hover, #about .navbar ul.navbar-right li:hover, #skills .navbar ul.navbar-right li:hover, #contact .navbar ul.navbar-right li:hover {
+          border-top: 1px solid #FFF;
+          border-bottom: 1px solid #FFF; }
+        .jumbotron .navbar ul.navbar-right li a, #about .navbar ul.navbar-right li a, #skills .navbar ul.navbar-right li a, #contact .navbar ul.navbar-right li a {
+          height: 20px;
+          padding-top: 5px; }
+        .jumbotron .navbar ul.navbar-right li ul, #about .navbar ul.navbar-right li ul, #skills .navbar ul.navbar-right li ul, #contact .navbar ul.navbar-right li ul {
+          background-color: rgba(255, 248, 255, 0.2);
+          min-width: 140px;
+          margin-top: 12px; }
+          .jumbotron .navbar ul.navbar-right li ul li, #about .navbar ul.navbar-right li ul li, #skills .navbar ul.navbar-right li ul li, #contact .navbar ul.navbar-right li ul li {
+            height: 30px; }
+            .jumbotron .navbar ul.navbar-right li ul li:hover, #about .navbar ul.navbar-right li ul li:hover, #skills .navbar ul.navbar-right li ul li:hover, #contact .navbar ul.navbar-right li ul li:hover {
+              border-top: 0;
+              border-bottom: 0; }
+            .jumbotron .navbar ul.navbar-right li ul li a, #about .navbar ul.navbar-right li ul li a, #skills .navbar ul.navbar-right li ul li a, #contact .navbar ul.navbar-right li ul li a {
+              height: 30px;
+              padding-top: 5px;
+              color: #fff; }
+              .jumbotron .navbar ul.navbar-right li ul li a:hover, #about .navbar ul.navbar-right li ul li a:hover, #skills .navbar ul.navbar-right li ul li a:hover, #contact .navbar ul.navbar-right li ul li a:hover {
+                background-color: rgba(0, 0, 0, 0.1); }
+              .jumbotron .navbar ul.navbar-right li ul li a img, #about .navbar ul.navbar-right li ul li a img, #skills .navbar ul.navbar-right li ul li a img, #contact .navbar ul.navbar-right li ul li a img {
+                line-height: 30px;
+                height: 20px;
+                width: 25px;
+                padding-top: 2px; }
+  .jumbotron .navbar-inverse .navbar-nav > .open > a, #about .navbar-inverse .navbar-nav > .open > a, #skills .navbar-inverse .navbar-nav > .open > a, #contact .navbar-inverse .navbar-nav > .open > a,
+  .jumbotron .navbar-inverse .navbar-nav > .open > a:focus, #about .navbar-inverse .navbar-nav > .open > a:focus, #skills .navbar-inverse .navbar-nav > .open > a:focus, #contact .navbar-inverse .navbar-nav > .open > a:focus,
+  .jumbotron .navbar-inverse .navbar-nav > .open > a:hover, #about .navbar-inverse .navbar-nav > .open > a:hover, #skills .navbar-inverse .navbar-nav > .open > a:hover, #contact .navbar-inverse .navbar-nav > .open > a:hover {
+    background-color: transparent; }
+  .jumbotron .slogan, #about .slogan, #skills .slogan, #contact .slogan {
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
     height: auto;
-    padding-top: 3vh;
-    padding-bottom: 20px;
-    color: #fff;
+    margin: 10% 25%;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: large;
+    font-weight: 900;
     text-align: center; }
-    .jumbotron .slogan img {
-      margin: 0 auto;
-      margin-top: 20px;
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border-width: 5px;
-      border-style: solid;
-      border-color: #2C2B2B; }
+    .jumbotron .slogan h1, #about .slogan h1, #skills .slogan h1, #contact .slogan h1 {
+      display: block;
+      font-weight: 800 !important;
+      text-transform: uppercase; }
+    .jumbotron .slogan h4, #about .slogan h4, #skills .slogan h4, #contact .slogan h4 {
+      display: block;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
 
-#about a {
-  cursor: help; }
+#about {
+  background-image: url(img/tlo.jpg);
+  padding-bottom: 0;
+  padding: 10% 0;
+  padding-bottom: 50px; }
+  #about h2 {
+    display: block;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff; }
+  #about img {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; }
+  #about p {
+    color: #fff;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px; }
+  #about a {
+    cursor: help;
+    color: #fff; }
+
+#skills {
+  background-image: none;
+  background-color: #ecf0f1;
+  padding-bottom: 0;
+  padding: 10% 0; }
+  #skills .row:first-of-type {
+    margin-bottom: 10%; }
 
 .skilss {
   text-align: center;
@@ -76,16 +164,31 @@ body {
       transition: 0.5s; }
   .skilss .prog {
     letter-spacing: -2px; }
-    .skilss .prog .prog0, .skilss .prog .prog1 {
+    .skilss .prog .prog0, .skilss .prog .c1.prog1, .skilss .prog .c2.prog1, .skilss .prog .c3.prog1, .skilss .prog .c4.prog1, .skilss .prog .c5.prog1, .skilss .prog .c6.prog1, .skilss .prog .c7.prog1, .skilss .prog .c8.prog1 {
       font-size: 30px;
       color: #808080; }
-    .skilss .prog .prog1 {
-      color: #008000; }
+    .skilss .prog .c1.prog1 {
+      color: #D7502B; }
+    .skilss .prog .c2.prog1 {
+      color: #C46B95; }
+    .skilss .prog .c3.prog1 {
+      color: #4A366C; }
+    .skilss .prog .c4.prog1 {
+      color: #061D2D; }
+    .skilss .prog .c5.prog1 {
+      color: #FCA51E; }
+    .skilss .prog .c6.prog1 {
+      color: #D8A035; }
+    .skilss .prog .c7.prog1 {
+      color: #13619B; }
+    .skilss .prog .c8.prog1 {
+      color: #0F558F; }
 
 .portfolio {
+  background-color: #95a5a6;
   text-align: center;
   text-align: left; }
-  .portfolio h1 {
+  .portfolio h2 {
     text-align: left; }
   .portfolio .row {
     padding-bottom: 0; }
@@ -160,7 +263,16 @@ body {
             background-color: #fff; }
 
 #contact {
-  height: 500px; }
+  background-image: url(img/tlo.jpg);
+  padding-bottom: 0;
+  padding: 10% 0; }
+  #contact h2 {
+    padding: 0 0.9vw;
+    display: block;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff; }
   #contact .container {
     max-width: 370px;
     height: 360px; }
@@ -205,5 +317,9 @@ footer {
     footer .github:hover {
       background: #4183C4;
       color: #FFFFFF; }
+
+@media only screen and (max-width: 992px) {
+  .slogan {
+    margin: 25% 15vw !important; } }
 
 /*# sourceMappingURL=style.css.map */

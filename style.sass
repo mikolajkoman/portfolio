@@ -1,11 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300&subset=latin,latin-ext)
-@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin-ext,latin);
-$bg-color:  #454343
-$bg-image: url(img/jumbo.jpg)
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin-ext,latin)
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,900&subset=latin-ext)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,900&subset=latin-ext)
+
+$bg-color: #454343
+$bg-image: url(img/jumbo_kopia1.jpg)
+$bg-image1: url(img/tlo.jpg)
+$bg-image2: url(img/tlo2.jpg)
 $text-color:  #2C2B2B
-$title-text-color: #fff
+$main-text-color: #fff
 $text-main-font: 'Lato', sans-serif
-$text-font: 'Oswald', sans-serif
+$text-font: 'Open Sans', sans-serif
+
 $project-0-img: url(project/0/photo.png)
 $project-1-img: url(project/1/photo.png)
 $project-2-img: url(project/2/photo.png)
@@ -31,56 +37,149 @@ body
 	margin: 0 auto
 
 .contain
-	width: 90%
-	border-radius: 4px
-	background-color: #fff
-	margin-bottom: 20px
-	h1
+	h2
 		text-align: left
-	h1, h3
+	h2, h3
 		padding-bottom: 10px
 		margin-left: 10px
 	p
 		padding-bottom: 10px
 		margin-left: 10px
 		font-size: 20px
+.row
+	margin-right: 0
+    margin-left: 0
 
-.navbar 
-	background-color: rgba(0, 0, 0, 0.7)
-	border: 0
 
 .jumbotron
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.7) 100%), $bg-image
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), $bg-image
 	background-size: cover
+	background-position: center
 	font-family: $text-font
-	height: 95vh
+	margin: 0 auto
+	min-height: 100vh
 	width: 100%
 	background-color: $bg-color	
+	padding-top: 0
 	padding-bottom: 50px
-	margin-bottom: 50px
-	.slogan
-
-		width: 100%
-		height: auto
-		padding-top: 3vh
-		padding-bottom: 20px
-		color: $title-text-color
-		text-align: center
+	.navbar 
+		background-color: rgba(0, 0, 0, 0.0)
+		height: 67px
+		padding: 3% 
+		border: 0
 		img
-			margin: 0 auto
-			margin-top: 20px
-			width: 250px
-			height: 250px
-			border-radius: 50%
-			border-width: 5px
-			border-style: solid
-			border-color: $text-color
+			margin-right: 5px
+			width: 48px
+			height: 48px
+			float: left
+		.navbar-brand
+			text-transform: uppercase
+			font-size: 16px
+			font-weight: bold
+			color: $main-text-color
+			line-height: 20px
+			padding: 5px 20px
+		ul.navbar-right
+			@extend .navbar-brand
+			padding: 0
+			font-weight: normal
+			line-height: 26px
+			
+			li
+				height: 35px
+				&:hover
+					border-top: 1px solid #FFF
+					border-bottom: 1px solid #FFF
+				a
+					height: 20px
+					padding-top: 5px
+
+				ul
+					background-color: rgba(255, 248, 255, 0.2)
+					min-width: 140px
+					margin-top: 12px
+					li
+						
+						height: 30px
+						&:hover
+							border-top: 0
+							border-bottom: 0
+						a
+							height: 30px
+							padding-top: 5px
+							color: $main-text-color
+							&:hover
+								background-color: rgba(0, 0, 0, 0.1)
+							img
+								line-height: 30px
+								height: 20px
+								width: 25px
+								padding-top: 2px
+
+	.navbar-inverse .navbar-nav>.open>a,
+	.navbar-inverse .navbar-nav>.open>a:focus,
+	.navbar-inverse .navbar-nav>.open>a:hover 
+    	background-color: transparent
+
+	.slogan
+		border-width: 5px
+		border-style: solid
+		border-color: rgba(255, 255, 255, 0.3)
+		height: auto
+		margin: 10% 25%
+		color: rgba(255, 255, 255, 0.3)
+		font-size: large
+		font-weight: 900
+		text-align: center
+		h1
+			display: block
+			font-weight: 800 !important
+			text-transform: uppercase
+
+		h4
+			display: block
+			text-transform: uppercase
+			margin-bottom: 20px
+		
 
 #about
+	@extend .jumbotron
+	background-image: $bg-image1
+	padding-bottom: 0
+	padding: 10% 0
+	padding-bottom: 50px
+	h2
+		display: block
+		font-weight: 800 !important
+		text-transform: uppercase
+		font-size: 50px
+		color: $main-text-color
+	img
+		margin: 0 auto
+		margin-top: 20px
+		width: 250px
+		height: 250px
+		border-radius: 50%
+	p
+		color: $main-text-color
+		border-radius: 15px
+		font-size: 16px
+		line-height: 30px
+		padding: 10px
+
 	a
 		cursor: help
-
+		color: #fff
+#skills
+	@extend .jumbotron
+	background-image: none
+	background-color: #ecf0f1
+	padding-bottom: 0
+	padding: 10% 0
+	.row:first-of-type
+		margin-bottom: 10%
 .skilss
+
 	text-align: center
 	margin-bottom: 20px
 	display: block
@@ -98,15 +197,36 @@ body
 		.prog0
 			font-size: 30px
 			color: #808080
-
-		.prog1
+		.c1.prog1
 			@extend .prog0
-			color: #008000
+			color: #D7502B
+		.c2.prog1
+			@extend .prog0
+			color: #C46B95
+		.c3.prog1
+			@extend .prog0
+			color: #4A366C
+		.c4.prog1
+			@extend .prog0
+			color: #061D2D
+		.c5.prog1
+			@extend .prog0
+			color: #FCA51E
+		.c6.prog1
+			@extend .prog0
+			color: #D8A035
+		.c7.prog1
+			@extend .prog0
+			color: #13619B
+		.c8.prog1
+			@extend .prog0
+			color: #0F558F
 
 .portfolio
+	background-color: #95a5a6
 	text-align: center
 	text-align: left
-	h1
+	h2
 		text-align: left
 	
 		
@@ -187,7 +307,18 @@ body
 						&:hover 
 							background-color: #fff
 #contact 
-	height: 500px
+	@extend .jumbotron
+	background-image: $bg-image1
+	padding-bottom: 0
+	padding: 10% 0
+	h2
+		
+		padding: 0 0.9vw
+		display: block
+		font-weight: 800 !important
+		text-transform: uppercase
+		font-size: 50px
+		color: $main-text-color
 	.container
 		max-width: 370px
 		height: 360px
@@ -200,7 +331,7 @@ footer
 	border-width: 5px 0 0 0
 	border-color: #fff
 	border-style: solid
-	color: $title-text-color
+	color: $main-text-color
 	padding: 20px 0
 	line-height: 50px
 
@@ -235,3 +366,8 @@ footer
 		&:hover
 			background: #4183C4
 			color: #FFFFFF
+
+@media only screen and (max-width: 992px)
+
+	.slogan
+		margin: 25% 15vw !important

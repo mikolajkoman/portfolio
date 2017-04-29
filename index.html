@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Portfolio Mikołaj Koman Junior Front-end Developer</title>
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -11,52 +12,64 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="kontakt.css">
 	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-		      	</button>
-				<a href="#top" class="navbar-brand">Mikołaj Koman</a>
-			</div>
-			<div class="collapse navbar-collapse" id="collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#about">O mnie</a></li>
-					<li><a href="#skills">Umiejętności</a></li>
-					<li><a href="#portfolio">Potrfolio</a></li>
-					<li><a href="#contact">Kontakt</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
 	<section id="top" class="container-fluid jumbotron text-center">
+		<nav class="navbar navbar-inverse navbar-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      	</button>
+			      	<img src="img/logo.png" alt="logo_mk" class="img-responsive photo">
+					<span class="navbar-brand">Mikołaj<br> Koman</span>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about">O mnie</a></li>
+						<li><a href="#skills">Umiejętności</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Kontakt</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Język <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="sd"><img src="img/pl.png" alt="my_photo" class="img-responsive photo">Polski</a></li>
+								<li><a href="sd"><img src="img/en.png" alt="my_photo" class="img-responsive photo">English</a></li></li>
+							</ul>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		<div class="slogan">
-			<img src="img/photo.jpg" alt="my_photo" class="img-responsive photo">
 			<h1>Mikołaj Koman</h1>
-			<h2>Junior Front-end Developer & Web Designer</h2>
+				<h4>Junior Front-end Developer & Web Designer</h4>
+
 		</div>
 	</section>
-	<section id="about" class="contain container">
-		<h1>O mnie</h1>
-		<p>
-			Nazywam się Mikołaj Koman. Mam 23 lata. Interesuję się Front-Endem i wszystkim co jest z nim związane. Poszukuję pracy lub stażu na stanowisku Junior Front-end Developer. Prywatnie jestem szczęśliwym mężem i tatą. W wolnych chwilach w całości pochłania mnie świat kodowania lub bieganie po forcie bawiąc się <a data-target="#asg" data-toggle="modal">ASG</a> .
-		</p>
+	<section id="about" class="contain container-fluid">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-md-offset-2">
+				<img src="img/photo.jpg" alt="my_photo" class="img-responsive photo">
+			</div>
+			<div class="col-sm-6 col-md-5 ">
+			<h2>Witaj,</h2>
+				<p>
+				<b>Nazywam się Mikołaj Koman.</b> Mam 23 lata. Interesuję się Front-Endem i wszystkim co jest z nim związane. Poszukuję pracy lub stażu na stanowisku Junior Front-end Developer. Prywatnie jestem szczęśliwym mężem i tatą. W wolnych chwilach w całości pochłania mnie świat kodowania lub bieganie po forcie bawiąc się <a data-target="#asg" data-toggle="modal">ASG</a> .
+				</p>
+			</div>
+		</div>
 	</section>
 
-<section  id="skills" class="contain container ">
-		<h1>Umiejętności</h1>
-			
+<section  id="skills" class="contain container-fluid "><a href="#"></a>			
 		<div class="row">
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/HTML5.png" alt="html5_img">
 				<div class="prog">
-					<span class="prog1">
+					<span class="prog1 c1">
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
@@ -71,7 +84,7 @@
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/sass.png" alt="sass_img">
 				<div class="prog">
-					<span class="prog1">
+					<span class="prog1 c2">
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
@@ -85,7 +98,7 @@
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/bootstrap.png" alt="bootstrap_img">
 				<div class="prog">
-					<span class="prog1">
+					<span class="prog1 c3">
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
@@ -99,7 +112,7 @@
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/git.png" alt="git_img">
 				<div class="prog">
-					<span class="prog1">
+					<span class="prog1 c4">
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
@@ -115,7 +128,7 @@
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/grunt.png" alt="grunt_img" >
 				<div class="prog">
-					<span class="prog1">
+					<span class="prog1 c5">
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 					</span>
@@ -129,7 +142,7 @@
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/js.png" alt="js_img">
 				<div class="prog">
-					<span class="prog1">
+					<span class="prog1 c6">
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 					</span>
@@ -143,7 +156,7 @@
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/jquery.png" alt="jquery_img">
 				<div class="prog">
-					<span class="prog1">
+					<span class="prog1 c7">
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 					</span>
@@ -157,7 +170,7 @@
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/ajax.jpg" alt="ajax_img">
 				<div class="prog">
-					<span class="prog1">
+					<span class="prog1 c8">
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 						<i class="fa fa-check-square" aria-hidden="true"></i>
 					</span>
@@ -173,8 +186,7 @@
 		
 	</section>
 	
-	<section id="portfolio" class="contain container portfolio">
-		<h1>Portfolio</h1>
+	<section id="portfolio" class="contain container-fluid portfolio"><a href="#"></a>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
@@ -255,15 +267,15 @@
 					
 		</div>
 	</section>
-	<section id="contact" class="contain container">
-		<h1>Formularz kontaktowy</h1>
+	<section id="contact" class="contain container-fluid">
+		<h2>Kontakt</h2>
 		<div class="container">
             <form action="form/send.php" method="post" id="contactform">
                 <fieldset>
                     <input type="text" name="contact_name" placeholder="Imię i nazwisko" required="required" tabindex="1" />
                     <input type="email" name="contact_email" placeholder="Adres e-mail" required="required" tabindex="2" />
                     <textarea rows="5" columns="10" name="contact_body" placeholder="Treść wiadomości" required="required" tabindex="3"></textarea>
-                    Podaj wynik: <span class="form_check_1"></span>&times;<span class="form_check_2"></span>=<input type="text" name="contact_check" maxlength="2" tabindex="4" />
+                    
                     <input type="submit" value="Wyślij" tabindex="5" />
                     <input type="hidden" name="contact_check_data" value="" />
                 </fieldset>
@@ -459,7 +471,7 @@
 			</div>
 		</div>
 	</section>
-	<footer class="navbar-inverse footer">
+	<footer class="navbar-inverse container-fluid footer">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12  col-md-4">
@@ -467,6 +479,7 @@
     			</div>
 				<div class="col-sm-12  col-md-4">
     				<p>Copyright &copy; 2016 mikolajkoman.pl</p>
+    				<p class="copyright">Made with <i class="fa fa-heart"></i> in Poland</p>
     			</div>
 				<div class="col-sm-12  col-md-4">
     				<p> 
@@ -496,7 +509,9 @@
   ga('send', 'pageview');
 
 </script> -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="main.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
