@@ -13,7 +13,8 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .contain h2 {
   text-align: left; }
@@ -44,9 +45,10 @@ body {
   padding-bottom: 50px; }
   .jumbotron .navbar, #about .navbar, #skills .navbar, #contact .navbar {
     background-color: transparent;
-    height: 67px;
-    padding: 3%;
-    border: 0; }
+    height: 70px;
+    padding: 1%;
+    border: 0;
+    transition: 1s; }
     .jumbotron .navbar img, #about .navbar img, #skills .navbar img, #contact .navbar img {
       margin-right: 5px;
       width: 48px;
@@ -60,6 +62,7 @@ body {
       line-height: 20px;
       padding: 5px 20px; }
     .jumbotron .navbar ul.navbar-right, #about .navbar ul.navbar-right, #skills .navbar ul.navbar-right, #contact .navbar ul.navbar-right {
+      margin: 7px;
       padding: 0;
       font-weight: normal;
       line-height: 26px; }
@@ -90,7 +93,8 @@ body {
                 line-height: 30px;
                 height: 20px;
                 width: 25px;
-                padding-top: 2px; }
+                padding-top: 2px;
+                border-radius: 50%; }
   .jumbotron .navbar-inverse .navbar-nav > .open > a, #about .navbar-inverse .navbar-nav > .open > a, #skills .navbar-inverse .navbar-nav > .open > a, #contact .navbar-inverse .navbar-nav > .open > a,
   .jumbotron .navbar-inverse .navbar-nav > .open > a:focus, #about .navbar-inverse .navbar-nav > .open > a:focus, #skills .navbar-inverse .navbar-nav > .open > a:focus, #contact .navbar-inverse .navbar-nav > .open > a:focus,
   .jumbotron .navbar-inverse .navbar-nav > .open > a:hover, #about .navbar-inverse .navbar-nav > .open > a:hover, #skills .navbar-inverse .navbar-nav > .open > a:hover, #contact .navbar-inverse .navbar-nav > .open > a:hover {
@@ -100,7 +104,7 @@ body {
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.3);
     height: auto;
-    margin: 10% 25%;
+    margin: 20% 25%;
     color: rgba(255, 255, 255, 0.3);
     font-size: large;
     font-weight: 900;

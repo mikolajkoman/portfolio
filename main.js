@@ -1,11 +1,28 @@
     $(document).ready(function(){
-        $(document.body).fadeIn(5500);
+        $(document.body).fadeIn(3000);
         $(".slogan").fadeIn(10000);
-        return 0;
+
+     
+
 });
 
 $( window ).scroll(function() {
      console.log(document.body.scrollTop);
+     var naviStyle = document.querySelector("nav").style;
+    if (document.body.scrollTop != 0){
+        naviStyle.backgroundColor = "rgba(0, 0, 0, 0.6)";
+        naviStyle.boxShadow = "-3px 3px 3px 0 rgba(0, 0, 0, 0.8)";
+        naviStyle.transform = "scale(1,0.8)";
+        naviStyle.top = "-5px";
+
+    }
+    else{
+
+        naviStyle.backgroundColor = "rgba(0, 0, 0, 0.0)";
+        naviStyle.boxShadow = null;
+        naviStyle.transform = null;
+        naviStyle.top = null;
+    }
   if ( 600 <= document.body.scrollTop && document.body.scrollTop <= 900) {
 
  console.log(document.body.scrollTop);
