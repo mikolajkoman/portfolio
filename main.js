@@ -1,17 +1,20 @@
     $(document).ready(function(){
         $(document.body).fadeIn(3000);
-        $(".slogan").fadeIn(10000);
-
-     
+        // $(".slogan").fadeIn(10000);
+//start animation    
 
 });
+    var dis = document.querySelector("#dis"); 
+ // dis.classList.add("disabled");
+ // add disable class for en lang for this time
 
-$( window ).scroll(function() {
-     console.log(document.body.scrollTop);
+$( window ).scroll(function navBarAnimation() {
+    var scrollA = document.body.scrollTop;
+     // console.log(scrollA);
      var naviStyle = document.querySelector("nav").style;
-    if (document.body.scrollTop != 0){
+    if (scrollA != 0){
         naviStyle.backgroundColor = "rgba(0, 0, 0, 0.6)";
-        naviStyle.boxShadow = "-3px 3px 3px 0 rgba(0, 0, 0, 0.8)";
+        naviStyle.boxShadow = "-3px 3px 3px 0 rgba(0, 0, 0, 0.9)";
         naviStyle.transform = "scale(1,0.8)";
         naviStyle.top = "-5px";
 
@@ -23,31 +26,25 @@ $( window ).scroll(function() {
         naviStyle.transform = null;
         naviStyle.top = null;
     }
-  if ( 600 <= document.body.scrollTop && document.body.scrollTop <= 900) {
+  if ( 600 <= scrollA && scrollA <= 900) {
 
- console.log(document.body.scrollTop);
-    $(document).ready(function(){
+  // console.log(scrollA);
         $(".diva").animate({left: '-200px'}, (1000)),
         $(".diva1").fadeIn(3600);
         return 0;
-    });
- console.log("Great!");
     }
- //  else if ( document.body.scrollTop >= 901) {
+      if ( 888 <= scrollA && scrollA <= 1000) {
 
- // console.log(document.body.scrollTop);
- //        $(".diva").fadeOut(100),
- //        $(".diva1").fadeOut(1000),
- //        $(".diva").fadeOut(100),
- // console.log("Hi");
- //    }
-
-// document.documentElement.scrollTop
-
+  // console.log(scrollA);
+        $(".know").fadeIn(3600);
+        $(".prog").fadeIn(7200);
+        $(".want").fadeIn(18000);
+        return 0;
+    }
 
 });
 
-$(function() {
+$(function myContactForm() {
     var check_1 = (Math.floor(Math.random() * 9) + 1).toString(),
         check_2 = (Math.floor(Math.random() * 9) + 1).toString(),
         check = check_1 + check_2;

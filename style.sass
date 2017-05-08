@@ -132,7 +132,7 @@ body
 		border-style: solid
 		border-color: rgba(255, 255, 255, 0.3)
 		height: auto
-		margin: 20% 25%
+		margin: 25%
 		color: rgba(255, 255, 255, 0.3)
 		font-size: large
 		font-weight: 900
@@ -141,6 +141,12 @@ body
 			display: block
 			font-weight: 800 !important
 			text-transform: uppercase
+			small
+				display: block
+				text-transform: uppercase
+				margin-bottom: 20px
+				font-size: 18px
+				margin-top: 20px
 
 		h4
 			display: block
@@ -184,159 +190,264 @@ body
 	background-image: none
 	background-color: #ecf0f1
 	padding-bottom: 0
-	padding: 10% 0
-	.row:first-of-type
-		margin-bottom: 10%
+	padding: 5% 0
+	ul
+		list-style: none
+		padding: 0
 
-	.circleSitck
-		position: absolut
-		color: #70869E
-		margin-top: 15px
-		margin-left: 49%
-		width: 1px
-		height: 160px
-		background: transparent
-		z-index: -6
-		border-left: dashed
-
-
-	.circle2 
-		position: relative
-		top: 3px
-		margin: auto
-		text-align: center
-		width: 90px
-		height: 90px
-		background: #70869E
-		background: -webkit-radial-gradient( #5A6B7E, #70869E) /* Safari 5.1-6.0 */
-		background: -o-radial-gradient(#5A6B7E, #70869E) /* For Opera 11.6 to 12.0 */
-		background: -moz-radial-gradient( #5A6B7E, #70869E) /* For Firefox 3.6 to 15 */
-		background: radial-gradient( #5A6B7E, #70869E) /* Standard syntax (must be last) */
-		-moz-border-radius: 50%
-		-webkit-border-radius: 50%
-		border-radius: 50%
-		z-index: 2
-
-	.circle
-		cursor: pointer
-		display: inline-block
-		position: relative
-		margin: 10px
-		width: 100px
-		height: 100px
-		background: gold 
-		-moz-border-radius: 50%
-		-webkit-border-radius: 50%
-		border-radius: 50%
-		border: solid 2px #70869E
-		z-index: 6
-		/*   box-shadow: 0px 0 10px red inset */
-		box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.7), -2px 15px 20px 0 rgba(0, 0, 0, 0.19)
-		transition:  1s
-		&:nth-child(even)
-			bottom: -80px
-			.circleSitck
-				height: 80px
-		&:nth-child(1)
-			background-color: #70869E
-			&:hover
-				background-color: #D7502B
-				box-shadow: 0px 5px 20px 0 rgba(215, 80, 43, 0.7), -2px 15px 20px 0 rgba(215, 80, 43, 0.19)
-			.img
-				content: url("http://mikolajkoman.pl/img/HTML5.png")
-		&:nth-child(2)
-			background-color: #70869E
-			&:hover
-				background-color: #C46B95
-				box-shadow: 0px 5px 20px 0 rgba(196, 107, 149, 0.7), -2px 15px 20px 0 rgba(196, 107, 149, 0.19)
-			.img
-				content: url("http://mikolajkoman.pl/img/sass.png")
-		&:nth-child(3)
-			background-color: #70869E
-			&:hover
-				background-color: #4A366C
-				box-shadow: 0px 5px 20px 0 rgba(74, 54, 108, 0.7), -2px 15px 20px 0 rgba(74, 54, 108, 0.19)
-			.img
-				content: url("http://mikolajkoman.pl/img/bootstrap.png")
-		&:nth-child(4)
-			background-color: #70869E
-			&:hover
-				background-color: #061D2D
-				box-shadow: 0px 5px 20px 0 rgba(6, 29, 45, 0.7), -2px 15px 20px 0 rgba(6, 29, 45, 0.19)
-			.img
-				content: url("http://mikolajkoman.pl/img/git.png")
-		&:nth-child(5)
-			background-color: #70869E
-			&:hover
-				background-color: #D8A035
-				box-shadow: 0px 5px 20px 0 rgba(216, 160, 53, 0.7), -2px 15px 40px 0 rgba(216, 160, 53, 0.19)
-			.img
-				content: url("http://mikolajkoman.pl/img/js.png")
-	  
-	.img 
+	.row
+		margin: 0 auto
 		
-		position: relative
-		top: 15px
-		width: 60px
-		height: 60px
-	.main_contain
-		margin: 0 auto
-	.contain2
-		max-width: 640px
-		margin: 0 20px
-		margin: 0 auto
-	.container2
-		margin: 0 auto
-		position: relative
-		color: #70869E
-		margin-top: 150px
-		width: 680px
-		height: 200px
-		background: #ecf0f1
-		border: solid #70869E
-.skilss
-
-	text-align: center
-	margin-bottom: 20px
-	display: block
-	img
-		height: 70px
-		width: auto
-	img, .prog
-		cursor: context-menu
-		transition: 0.5s
+	.inner
+		border: solid 1px
+		border-radius: 5px
+		margin: 10px 25px 
+		margin: 10vh auto 
+		max-width: 250px
+		-moz-box-shadow: 0 0 10px #888
+		-webkit-box-shadow: 0 0 10px #888
+		box-shadow: 0 0 10px #888
+		transition: all .2s ease-in-out
 		&:hover
-			transform: scale(1.20)
+			transform: scale(1.1)
 			transition: 0.5s
-	.prog
-		letter-spacing: -2px
-		.prog0
-			font-size: 30px
-			color: #808080
-		.c1.prog1
-			@extend .prog0
-			color: #D7502B
-		.c2.prog1
-			@extend .prog0
-			color: #C46B95
-		.c3.prog1
-			@extend .prog0
-			color: #4A366C
-		.c4.prog1
-			@extend .prog0
-			color: #061D2D
-		.c5.prog1
-			@extend .prog0
-			color: #FCA51E
-		.c6.prog1
-			@extend .prog0
-			color: #D8A035
-		.c7.prog1
-			@extend .prog0
-			color: #13619B
-		.c8.prog1
-			@extend .prog0
-			color: #0F558F
+			overflow: hidden
+			.fa-check
+				-ms-transform: rotate(360deg) /* IE 9 */
+				-webkit-transform: rotate(360deg) /* Chrome, Safari, Opera */
+				transform: rotate(360deg)
+			.fa-spinner
+				-ms-transform: rotate(3600deg) /* IE 9 */
+				-webkit-transform: rotate(3600deg) /* Chrome, Safari, Opera */
+				transform: rotate(3600deg)
+				transition: 5s
+			.fa-forward
+				transform: translate(200px,0)
+				transition: 2s
+	.draw 
+		transition: color 0.25s
+		&:before,
+		&:after
+			border: 2px solid transparent
+			width: 0
+			height: 0
+		
+		// This covers the top & right borders (expands right, then down)
+		&::before 
+			top: 0
+			left: 0
+		// And this the bottom & left borders (expands left, then up)
+		&::after
+			bottom: 0
+			right: 0
+		&:hover 
+			color: #000
+		
+		// Hover styles
+		&:hover::before,
+		&:hover::after
+			width: 100%
+			height: 100%
+		
+		&:hover::before 
+			border-top-color: #000 // Make borders visible
+			border-right-color: #000
+			transition: width 0.25s ease-out, // Width expands first
+			height 0.25s ease-out 0.25s // And then height
+		
+		&:hover::after 
+			border-bottom-color: #000 // Make borders visible
+			border-left-color: #000
+			transition: border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+			width 0.25s ease-out 0.5s, // And then exanding width
+			height 0.25s ease-out 0.75s // And finally height
+
+		
+
+	.fa-check
+		color: #27ae60
+		transition: all .2s ease-in-out
+	.fa-forward
+		color: #8e44ad
+		transition: 1s
+	.fa-spinner
+		color: #d35400
+	.head
+		line-height: 24px
+		text-align: center
+		font-weight: bold
+		border-bottom: solid 1px
+		border-radius: 5px 5px 0 0
+	.know .head
+		background-color: #27ae60
+	.prog .head
+		background-color: #d35400
+	.want .head
+		background-color: #8e44ad
+	ul
+		width: 200px
+		margin: 0 auto
+		// padding: 0 20%
+		li
+			width: 200px
+			margin: 10px
+			text-align: left
+	.prog div:nth-child(even)
+		margin: 10vh auto
+
+		// 	.row:first-of-type
+// 		margin-bottom: 10%
+
+// 	.circleSitck
+// 		position: absolut
+// 		color: #70869E
+// 		margin-top: 15px
+// 		margin-left: 49%
+// 		width: 1px
+// 		height: 160px
+// 		background: transparent
+// 		z-index: -6
+// 		border-left: dashed
+
+
+// 	.circle2 
+// 		position: relative
+// 		top: 3px
+// 		margin: auto
+// 		text-align: center
+// 		width: 90px
+// 		height: 90px
+// 		background: #70869E
+// 		background: -webkit-radial-gradient( #5A6B7E, #70869E) /* Safari 5.1-6.0 */
+// 		background: -o-radial-gradient(#5A6B7E, #70869E) /* For Opera 11.6 to 12.0 */
+// 		background: -moz-radial-gradient( #5A6B7E, #70869E) /* For Firefox 3.6 to 15 */
+// 		background: radial-gradient( #5A6B7E, #70869E) /* Standard syntax (must be last) */
+// 		-moz-border-radius: 50%
+// 		-webkit-border-radius: 50%
+// 		border-radius: 50%
+// 		z-index: 2
+
+// 	.circle
+// 		cursor: pointer
+// 		display: inline-block
+// 		position: relative
+// 		margin: 10px
+// 		width: 100px
+// 		height: 100px
+// 		background: gold 
+// 		-moz-border-radius: 50%
+// 		-webkit-border-radius: 50%
+// 		border-radius: 50%
+// 		border: solid 2px #70869E
+// 		z-index: 6
+// 		/*   box-shadow: 0px 0 10px red inset */
+// 		box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.7), -2px 15px 20px 0 rgba(0, 0, 0, 0.19)
+// 		transition:  1s
+// 		&:nth-child(even)
+// 			bottom: -80px
+// 			.circleSitck
+// 				height: 80px
+// 		&:nth-child(1)
+// 			background-color: #70869E
+// 			&:hover
+// 				background-color: #D7502B
+// 				box-shadow: 0px 5px 20px 0 rgba(215, 80, 43, 0.7), -2px 15px 20px 0 rgba(215, 80, 43, 0.19)
+// 			.img
+// 				content: url("http://mikolajkoman.pl/img/HTML5.png")
+// 		&:nth-child(2)
+// 			background-color: #70869E
+// 			&:hover
+// 				background-color: #C46B95
+// 				box-shadow: 0px 5px 20px 0 rgba(196, 107, 149, 0.7), -2px 15px 20px 0 rgba(196, 107, 149, 0.19)
+// 			.img
+// 				content: url("http://mikolajkoman.pl/img/sass.png")
+// 		&:nth-child(3)
+// 			background-color: #70869E
+// 			&:hover
+// 				background-color: #4A366C
+// 				box-shadow: 0px 5px 20px 0 rgba(74, 54, 108, 0.7), -2px 15px 20px 0 rgba(74, 54, 108, 0.19)
+// 			.img
+// 				content: url("http://mikolajkoman.pl/img/bootstrap.png")
+// 		&:nth-child(4)
+// 			background-color: #70869E
+// 			&:hover
+// 				background-color: #061D2D
+// 				box-shadow: 0px 5px 20px 0 rgba(6, 29, 45, 0.7), -2px 15px 20px 0 rgba(6, 29, 45, 0.19)
+// 			.img
+// 				content: url("http://mikolajkoman.pl/img/git.png")
+// 		&:nth-child(5)
+// 			background-color: #70869E
+// 			&:hover
+// 				background-color: #D8A035
+// 				box-shadow: 0px 5px 20px 0 rgba(216, 160, 53, 0.7), -2px 15px 40px 0 rgba(216, 160, 53, 0.19)
+// 			.img
+// 				content: url("http://mikolajkoman.pl/img/js.png")
+	  
+// 	.img 
+		
+// 		position: relative
+// 		top: 15px
+// 		width: 60px
+// 		height: 60px
+// 	.main_contain
+// 		margin: 0 auto
+// 	.contain2
+// 		max-width: 640px
+// 		margin: 0 20px
+// 		margin: 0 auto
+// 	.container2
+// 		margin: 0 auto
+// 		position: relative
+// 		color: #70869E
+// 		margin-top: 150px
+// 		width: 680px
+// 		height: 200px
+// 		background: #ecf0f1
+// 		border: solid #70869E
+// .skilss
+
+// 	text-align: center
+// 	margin-bottom: 20px
+// 	display: block
+// 	img
+// 		height: 70px
+// 		width: auto
+// 	img, .prog
+// 		cursor: context-menu
+// 		transition: 0.5s
+// 		&:hover
+// 			transform: scale(1.20)
+// 			transition: 0.5s
+// 	.prog
+// 		letter-spacing: -2px
+// 		.prog0
+// 			font-size: 30px
+// 			color: #808080
+// 		.c1.prog1
+// 			@extend .prog0
+// 			color: #D7502B
+// 		.c2.prog1
+// 			@extend .prog0
+// 			color: #C46B95
+// 		.c3.prog1
+// 			@extend .prog0
+// 			color: #4A366C
+// 		.c4.prog1
+// 			@extend .prog0
+// 			color: #061D2D
+// 		.c5.prog1
+// 			@extend .prog0
+// 			color: #FCA51E
+// 		.c6.prog1
+// 			@extend .prog0
+// 			color: #D8A035
+// 		.c7.prog1
+// 			@extend .prog0
+// 			color: #13619B
+// 		.c8.prog1
+// 			@extend .prog0
+// 			color: #0F558F
+
 
 .portfolio
 	background-color: #95a5a6

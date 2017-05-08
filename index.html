@@ -25,8 +25,9 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 			      	</button>
+			      	<a href="#top">
 			      	<img src="img/logo.png" alt="logo_mk" class="img-responsive photo">
-					<span class="navbar-brand">Mikołaj<br> Koman</span>
+					<span class="navbar-brand">Mikołaj<br> Koman</span></a>
 				</div>
 				<div class="collapse navbar-collapse" id="navi">
 					<ul class="nav navbar-nav navbar-right">
@@ -38,7 +39,7 @@
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Język <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="#"><img src="img/pl.png" alt="my_photo" class="img-responsive photo">Polski</a></li>
-								<li><a href="#"><img src="img/en.png" alt="my_photo" class="img-responsive photo">English</a></li>
+								<li id="dis"><a href="#"><img src="img/en.png" alt="my_photo" class="img-responsive photo">English</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -46,8 +47,7 @@
 			</div>
 		</nav>
 		<div class="slogan" style="">
-			<h1>Mikołaj Koman</h1>
-				<h4>Junior Front-end Developer & Web Designer</h4>
+			<h1>Mikołaj Koman <small>Junior Front-end Developer & Web Designer</small> </h1>
 
 		</div>
 	</section>
@@ -66,8 +66,59 @@
 		</div>
 	</section>
 
-<section  id="skills" class="contain container-fluid "><a href="#"></a>			
-		<div class="row">
+<section  id="skills" class="contain container-fluid "><!-- <a href="#"></a>	 -->	
+	<div class="container row">
+		<div class="col-md-4 know"  style="display:none;">
+			<div class="inner">
+			  <div class="head">znam i używam</div>
+			  <div class="draw">
+			    <ul>
+			     <li><span class="fa fa-check" aria-hidden="true"></span> HTML</li>
+			     <li><span class="fa fa-check" aria-hidden="true"></span> CSS</li>
+			     <li><span class="fa fa-check" aria-hidden="true"></span> Sass</li>
+			     <li><span class="fa fa-check" aria-hidden="true"></span> Bootstrap</li>
+			     <li><span class="fa fa-check" aria-hidden="true"></span> Git</li>
+			     <li><span class="fa fa-check" aria-hidden="true"></span> Grunt</li>
+			    </ul></div>
+			</div>
+		</div>
+		<div class="col-md-4 prog"  style="display:none;">
+			<div class="inner">
+				<div class="head">w toku</div>
+			  <div class="draw" >
+			    <ul>
+			     <li><span class="fa fa-spinner" aria-hidden="true"></span> JavaScript</li>
+			     <li><span class="fa fa-spinner" aria-hidden="true"></span> wdrażanie nowych funkcjonalności na stronie</li>
+			    </ul></div>
+			</div>
+		  
+		</div>
+		<div class="col-md-4 want"  style="display:none;">
+			<div class="inner">
+				<div class="head">want to know</div>
+			  <div class="draw">
+			    <ul>
+			     
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> jQuery</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> Ajax</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> Node</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> npm</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> React</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> Babel</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> Redux</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> Webpack</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> Jest</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> RxJS</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> CSS Modules</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> eslint, stylelint</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> WordPress ;)</li>
+			      <li><span class="fa fa-forward" aria-hidden="true"></span> PHP</li>
+			    </ul>
+			    </div>
+			</div>
+		</div>
+	</div>	
+<!-- 		<div class="row">
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/HTML5.png" alt="html5_img">
 				<div class="prog">
@@ -183,9 +234,9 @@
  					</span>
 				</div>
 			</div>
-		</div>
-
-			<div class="contain2">
+		</div> -->
+<!-- 
+	<div class="contain2">
 		<div class="circle">
 			<div class="circle2">
 				<img class="img">
@@ -218,7 +269,7 @@
 		</div>
 	</div>
 	<div class="container2">
-	</div>
+	</div> -->
 
 	</section>
 	
@@ -506,7 +557,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12  col-md-4">
-    				<p>mikolaj.koman@gmail.com</p>
+    				<p>kontakt@mikolaj.koman.pl</p>
     			</div>
 				<div class="col-sm-12  col-md-4">
     				<p>Copyright &copy; 2016-2017 mikolajkoman.pl</p>
@@ -525,6 +576,7 @@
 					</p>
     			</div>
     		</div>
+    		<p>Ten serwis podobno wykorzystuje pliki cookies (tzw. ciasteczka <i class="fa fa-coffee" aria-hidden="true"></i>). Korzystanie z witryny oznacza zgodę na ich zapis lub odczyt wg ustawień Twojej przeglądarki.</p>
 		</div>
 	</footer>
 <script>
