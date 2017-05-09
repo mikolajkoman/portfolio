@@ -8,7 +8,7 @@
  // dis.classList.add("disabled");
  // add disable class for en lang for this time
 
-$( window ).scroll(function navBarAnimation() {
+$( window ).scroll(function scrollAnimations() {
     var scrollA = document.body.scrollTop;
      // console.log(scrollA);
      var naviStyle = document.querySelector("nav").style;
@@ -26,19 +26,19 @@ $( window ).scroll(function navBarAnimation() {
         naviStyle.transform = null;
         naviStyle.top = null;
     }
-  if ( 600 <= scrollA && scrollA <= 900) {
+  if ( 600 <= scrollA && scrollA <= 1000) {
 
-  // console.log(scrollA);
+
         $(".diva").animate({left: '-200px'}, (1000)),
         $(".diva1").fadeIn(3600);
         return 0;
     }
-      if ( 888 <= scrollA && scrollA <= 1000) {
+      if ( 855 <= scrollA && scrollA ) {
 
-  // console.log(scrollA);
+   console.log(scrollA);
         $(".know").fadeIn(3600);
         $(".prog").fadeIn(7200);
-        $(".want").fadeIn(18000);
+        $(".want").fadeIn(8400);
         return 0;
     }
 
