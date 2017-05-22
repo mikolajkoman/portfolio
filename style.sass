@@ -179,7 +179,14 @@ body
 		width: 250px
 		height: 250px
 		border-radius: 50%
-		box-shadow: -3px 10px 10px 0 rgba(0, 0, 0, 0.7), -2px 15px 20px 0 rgba(0, 0, 0, 0.19)
+		-webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
+		-moz-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
+		box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
+	.diva1
+
+		-webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
+		-moz-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
+		box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
 	p
 		color: $main-text-color
 		border-radius: 15px
@@ -190,6 +197,67 @@ body
 	a
 		cursor: help
 		color: #fff
+	
+.hidden
+	visability: hidden
+#about1
+	@extend .jumbotron
+	background-image: $bg-image1
+	.card
+		padding: 1vw
+		margin: 75px auto
+		background: #000
+		border-radius: 10px
+		width: 400px
+		height: auto
+		-webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
+		-moz-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
+		box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
+		header
+			display: block
+			text-align: center
+			margin-bottom: 20px
+			img
+				margin: 0 auto
+				width: 150px
+				height: 150px
+				border-radius: 50%
+				border: 3px solid #0A3250
+			p
+				color: #fff
+				i
+					color: #444
+					font-size: 20px
+		article
+		
+			ul.list 
+				color: #eee
+				list-style: none
+				padding-left: 0px
+
+				li:nth-child(odd) 
+					background-color:#13171d
+
+				li> i
+					margin-right: 15px
+
+			.list> li 
+				padding: 15px 0px 15px 40px
+				font-size: 16px
+				font-weight: lighter
+
+			.list>li:hover 
+
+				color: white
+				box-shadow: 1px 1px 10px 1px #50e6df inset
+				transition: padding-left 0.2s linear
+				padding-left: 60px
+			button
+				margin: 5% 30%
+				background: transparent
+				&:hover
+					background: transparent 
+					box-shadow: 1px 1px 7px 1px #50e6df inset
 
 #skills
 	@extend .jumbotron
@@ -456,6 +524,7 @@ body
 // 			color: #0F558F
 
 
+
 .portfolio
 	background-color: #95a5a6
 	text-align: center
@@ -542,6 +611,28 @@ body
 						margin: 10px
 						&:hover 
 							background-color: #fff
+	.left
+		background: #13171d
+		padding-top: 40px
+		button
+			display: block
+			border-radius: 50%
+			border: none
+			background-color: #2C2B2B
+			color: #13171d
+			font-size: 30px
+			margin: 30px auto
+			width: 60px
+			height: 60px
+			-webkit-box-shadow: 0px 0px 5px 10px rgba(0,0,0,0.75)
+			-moz-box-shadow: 0px 0px 5px 10px rgba(0,0,0,0.75)
+			box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75)
+			transition: 0.5s
+			&:hover
+				transform: scale(1.20)
+				transition: 0.5s
+
+	.right
 #contact 
 	@extend .jumbotron
 	background-image: $bg-image1

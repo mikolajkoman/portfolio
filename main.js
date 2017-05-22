@@ -8,6 +8,11 @@
  // dis.classList.add("disabled");
  // add disable class for en lang for this time
 
+    var about = document.querySelector("#about"),
+        about1 = document.querySelector("#about1"),
+        card = document.querySelector(".card"),
+        button  =   card.querySelector("button");
+
 $( window ).scroll(function scrollAnimations() {
     var scrollA = document.body.scrollTop;
      // console.log(scrollA);
@@ -27,10 +32,12 @@ $( window ).scroll(function scrollAnimations() {
         naviStyle.top = null;
     }
   if ( 600 <= scrollA && scrollA <= 1000) {
-
-
+        button.addEventListener("click", function(){
+        about1.classList.add("hidden");
+        about.classList.remove("hidden");
         $(".diva").animate({left: '-200px'}, (1000)),
-        $(".diva1").fadeIn(3600);
+        document.querySelector(".diva1").style.backgroundColor = "rgba(0, 0, 0, 0.6)",
+        $(".diva1").fadeIn(3600);});
         return 0;
     }
       if ( 855 <= scrollA && scrollA ) {
