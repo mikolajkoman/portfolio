@@ -32,7 +32,7 @@ body {
   margin-right: 0;
     margin-right-margin-left: 0; }
 
-.jumbotron, #about, #about1, #skills, #contact {
+.jumbotron, #about, #skills, #contact {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(img/jumbo.jpg);
   background-size: cover;
   background-position: center;
@@ -43,70 +43,70 @@ body {
   background-color: #454343;
   padding-top: 0;
   padding-bottom: 50px; }
-  .jumbotron .navbar, #about .navbar, #about1 .navbar, #skills .navbar, #contact .navbar {
+  .jumbotron .navbar, #about .navbar, #skills .navbar, #contact .navbar {
     background-color: transparent;
     height: 70px;
     padding: 1%;
     border: 0;
     transition: 1s; }
-    .jumbotron .navbar img, #about .navbar img, #about1 .navbar img, #skills .navbar img, #contact .navbar img {
+    .jumbotron .navbar img, #about .navbar img, #skills .navbar img, #contact .navbar img {
       margin-right: 5px;
       width: 48px;
       height: 48px;
       float: left; }
-    .jumbotron .navbar .navbar-brand, #about .navbar .navbar-brand, #about1 .navbar .navbar-brand, #skills .navbar .navbar-brand, #contact .navbar .navbar-brand, .jumbotron .navbar ul.navbar-right, #about .navbar ul.navbar-right, #about1 .navbar ul.navbar-right, #skills .navbar ul.navbar-right, #contact .navbar ul.navbar-right {
+    .jumbotron .navbar .navbar-brand, #about .navbar .navbar-brand, #skills .navbar .navbar-brand, #contact .navbar .navbar-brand, .jumbotron .navbar ul.navbar-right, #about .navbar ul.navbar-right, #skills .navbar ul.navbar-right, #contact .navbar ul.navbar-right {
       text-transform: uppercase;
       font-size: 16px;
       font-weight: bold;
       line-height: 20px;
       padding: 5px 20px; }
-    .jumbotron .navbar ul.navbar-right, #about .navbar ul.navbar-right, #about1 .navbar ul.navbar-right, #skills .navbar ul.navbar-right, #contact .navbar ul.navbar-right {
+    .jumbotron .navbar ul.navbar-right, #about .navbar ul.navbar-right, #skills .navbar ul.navbar-right, #contact .navbar ul.navbar-right {
       margin: 7px;
       padding: 0;
       font-weight: normal;
       line-height: 26px; }
-      .jumbotron .navbar ul.navbar-right li, #about .navbar ul.navbar-right li, #about1 .navbar ul.navbar-right li, #skills .navbar ul.navbar-right li, #contact .navbar ul.navbar-right li {
+      .jumbotron .navbar ul.navbar-right li, #about .navbar ul.navbar-right li, #skills .navbar ul.navbar-right li, #contact .navbar ul.navbar-right li {
         height: 35px;
         border-top-color: rgba(255, 248, 255, 0);
         border-bottom-color: rgba(255, 248, 255, 0);
         transition: 5s; }
-        .jumbotron .navbar ul.navbar-right li:hover, #about .navbar ul.navbar-right li:hover, #about1 .navbar ul.navbar-right li:hover, #skills .navbar ul.navbar-right li:hover, #contact .navbar ul.navbar-right li:hover {
+        .jumbotron .navbar ul.navbar-right li:hover, #about .navbar ul.navbar-right li:hover, #skills .navbar ul.navbar-right li:hover, #contact .navbar ul.navbar-right li:hover {
           border-top: 1px solid #FFF;
           border-bottom: 1px solid #FFF;
           transition: 2s; }
-        .jumbotron .navbar ul.navbar-right li a, #about .navbar ul.navbar-right li a, #about1 .navbar ul.navbar-right li a, #skills .navbar ul.navbar-right li a, #contact .navbar ul.navbar-right li a {
+        .jumbotron .navbar ul.navbar-right li a, #about .navbar ul.navbar-right li a, #skills .navbar ul.navbar-right li a, #contact .navbar ul.navbar-right li a {
           height: 35px;
           padding-top: 5px;
           color: #fff;
           transition: 2s; }
-          .jumbotron .navbar ul.navbar-right li a:hover, #about .navbar ul.navbar-right li a:hover, #about1 .navbar ul.navbar-right li a:hover, #skills .navbar ul.navbar-right li a:hover, #contact .navbar ul.navbar-right li a:hover {
+          .jumbotron .navbar ul.navbar-right li a:hover, #about .navbar ul.navbar-right li a:hover, #skills .navbar ul.navbar-right li a:hover, #contact .navbar ul.navbar-right li a:hover {
             background-color: rgba(255, 248, 255, 0.4); }
-        .jumbotron .navbar ul.navbar-right li ul, #about .navbar ul.navbar-right li ul, #about1 .navbar ul.navbar-right li ul, #skills .navbar ul.navbar-right li ul, #contact .navbar ul.navbar-right li ul {
+        .jumbotron .navbar ul.navbar-right li ul, #about .navbar ul.navbar-right li ul, #skills .navbar ul.navbar-right li ul, #contact .navbar ul.navbar-right li ul {
           background-color: rgba(255, 248, 255, 0.2);
           min-width: 140px;
           margin-top: 12px; }
-          .jumbotron .navbar ul.navbar-right li ul li, #about .navbar ul.navbar-right li ul li, #about1 .navbar ul.navbar-right li ul li, #skills .navbar ul.navbar-right li ul li, #contact .navbar ul.navbar-right li ul li {
+          .jumbotron .navbar ul.navbar-right li ul li, #about .navbar ul.navbar-right li ul li, #skills .navbar ul.navbar-right li ul li, #contact .navbar ul.navbar-right li ul li {
             height: 30px; }
-            .jumbotron .navbar ul.navbar-right li ul li:hover, #about .navbar ul.navbar-right li ul li:hover, #about1 .navbar ul.navbar-right li ul li:hover, #skills .navbar ul.navbar-right li ul li:hover, #contact .navbar ul.navbar-right li ul li:hover {
+            .jumbotron .navbar ul.navbar-right li ul li:hover, #about .navbar ul.navbar-right li ul li:hover, #skills .navbar ul.navbar-right li ul li:hover, #contact .navbar ul.navbar-right li ul li:hover {
               border-top: 0;
               border-bottom: 0; }
-            .jumbotron .navbar ul.navbar-right li ul li a, #about .navbar ul.navbar-right li ul li a, #about1 .navbar ul.navbar-right li ul li a, #skills .navbar ul.navbar-right li ul li a, #contact .navbar ul.navbar-right li ul li a {
+            .jumbotron .navbar ul.navbar-right li ul li a, #about .navbar ul.navbar-right li ul li a, #skills .navbar ul.navbar-right li ul li a, #contact .navbar ul.navbar-right li ul li a {
               height: 30px;
               padding-top: 5px;
               color: #fff; }
-              .jumbotron .navbar ul.navbar-right li ul li a:hover, #about .navbar ul.navbar-right li ul li a:hover, #about1 .navbar ul.navbar-right li ul li a:hover, #skills .navbar ul.navbar-right li ul li a:hover, #contact .navbar ul.navbar-right li ul li a:hover {
+              .jumbotron .navbar ul.navbar-right li ul li a:hover, #about .navbar ul.navbar-right li ul li a:hover, #skills .navbar ul.navbar-right li ul li a:hover, #contact .navbar ul.navbar-right li ul li a:hover {
                 background-color: rgba(0, 0, 0, 0.1); }
-              .jumbotron .navbar ul.navbar-right li ul li a img, #about .navbar ul.navbar-right li ul li a img, #about1 .navbar ul.navbar-right li ul li a img, #skills .navbar ul.navbar-right li ul li a img, #contact .navbar ul.navbar-right li ul li a img {
+              .jumbotron .navbar ul.navbar-right li ul li a img, #about .navbar ul.navbar-right li ul li a img, #skills .navbar ul.navbar-right li ul li a img, #contact .navbar ul.navbar-right li ul li a img {
                 line-height: 30px;
                 height: 20px;
                 width: 25px;
                 padding-top: 2px;
                 border-radius: 50%; }
-  .jumbotron .navbar-inverse .navbar-nav > .open > a, #about .navbar-inverse .navbar-nav > .open > a, #about1 .navbar-inverse .navbar-nav > .open > a, #skills .navbar-inverse .navbar-nav > .open > a, #contact .navbar-inverse .navbar-nav > .open > a,
-  .jumbotron .navbar-inverse .navbar-nav > .open > a:focus, #about .navbar-inverse .navbar-nav > .open > a:focus, #about1 .navbar-inverse .navbar-nav > .open > a:focus, #skills .navbar-inverse .navbar-nav > .open > a:focus, #contact .navbar-inverse .navbar-nav > .open > a:focus,
-  .jumbotron .navbar-inverse .navbar-nav > .open > a:hover, #about .navbar-inverse .navbar-nav > .open > a:hover, #about1 .navbar-inverse .navbar-nav > .open > a:hover, #skills .navbar-inverse .navbar-nav > .open > a:hover, #contact .navbar-inverse .navbar-nav > .open > a:hover {
+  .jumbotron .navbar-inverse .navbar-nav > .open > a, #about .navbar-inverse .navbar-nav > .open > a, #skills .navbar-inverse .navbar-nav > .open > a, #contact .navbar-inverse .navbar-nav > .open > a,
+  .jumbotron .navbar-inverse .navbar-nav > .open > a:focus, #about .navbar-inverse .navbar-nav > .open > a:focus, #skills .navbar-inverse .navbar-nav > .open > a:focus, #contact .navbar-inverse .navbar-nav > .open > a:focus,
+  .jumbotron .navbar-inverse .navbar-nav > .open > a:hover, #about .navbar-inverse .navbar-nav > .open > a:hover, #skills .navbar-inverse .navbar-nav > .open > a:hover, #contact .navbar-inverse .navbar-nav > .open > a:hover {
     background-color: transparent; }
-  .jumbotron .slogan, #about .slogan, #about1 .slogan, #skills .slogan, #contact .slogan {
+  .jumbotron .slogan, #about .slogan, #skills .slogan, #contact .slogan {
     border-width: 5px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.3);
@@ -116,18 +116,18 @@ body {
     font-size: large;
     font-weight: 900;
     text-align: center; }
-    .jumbotron .slogan h1, #about .slogan h1, #about1 .slogan h1, #skills .slogan h1, #contact .slogan h1 {
+    .jumbotron .slogan h1, #about .slogan h1, #skills .slogan h1, #contact .slogan h1 {
       display: block;
       font-weight: 800 !important;
       text-transform: uppercase; }
-      .jumbotron .slogan h1 small, #about .slogan h1 small, #about1 .slogan h1 small, #skills .slogan h1 small, #contact .slogan h1 small {
+      .jumbotron .slogan h1 small, #about .slogan h1 small, #skills .slogan h1 small, #contact .slogan h1 small {
         display: block;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.6);
         font-size: 18px;
         margin-top: 20px;
         margin-bottom: 20px; }
-    .jumbotron .slogan h4, #about .slogan h4, #about1 .slogan h4, #skills .slogan h4, #contact .slogan h4 {
+    .jumbotron .slogan h4, #about .slogan h4, #skills .slogan h4, #contact .slogan h4 {
       display: block;
       text-transform: uppercase;
       margin-bottom: 20px; }
@@ -135,7 +135,7 @@ body {
 #about {
   background-image: url(img/tlo.jpg);
   padding-bottom: 0;
-  padding: 10% 0;
+  padding: 80px 0;
   padding-bottom: 50px; }
   #about h2 {
     display: block;
@@ -147,16 +147,22 @@ body {
   #about img {
     margin: 0 auto;
     margin-top: 20px;
-    width: 250px;
-    height: 250px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     -webkit-box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75); }
   #about .diva1 {
+    margin: 10px;
+    margin-top: 20px;
     -webkit-box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75); }
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: justify; }
   #about p {
     color: #fff;
     border-radius: 15px;
@@ -166,153 +172,108 @@ body {
   #about a {
     cursor: help;
     color: #fff; }
-
-.hidden {
-  visability: hidden; }
-
-#about1 {
-  background-image: url(img/tlo.jpg); }
-  #about1 .card {
+  #about .card {
+    display: none;
     padding: 1vw;
-    margin: 75px auto;
+    margin: 0 auto;
     background: #000;
     border-radius: 10px;
-    width: 400px;
+    width: 800px;
     height: auto;
     -webkit-box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.75); }
-    #about1 .card header {
+    #about .card header {
       display: block;
       text-align: center;
       margin-bottom: 20px; }
-      #about1 .card header img {
+      #about .card header img {
+        display: inline-block;
         margin: 0 auto;
+        margin-top: 5px;
         width: 150px;
         height: 150px;
         border-radius: 50%;
         border: 3px solid #0A3250; }
-      #about1 .card header p {
+      #about .card header p {
         color: #fff; }
-        #about1 .card header p i {
+        #about .card header p i {
           color: #444;
           font-size: 20px; }
-    #about1 .card article ul.list {
+    #about .card article ul.list {
       color: #eee;
       list-style: none;
       padding-left: 0px; }
-      #about1 .card article ul.list li:nth-child(odd) {
+      #about .card article ul.list li:nth-child(odd) {
         background-color: #13171d; }
-      #about1 .card article ul.list li > i {
+      #about .card article ul.list li > i {
         margin-right: 15px; }
-    #about1 .card article .list > li {
+    #about .card article .list > li {
       padding: 15px 0px 15px 40px;
       font-size: 16px;
       font-weight: lighter; }
-    #about1 .card article .list > li:hover {
+    #about .card article .list > li:hover {
       color: white;
       box-shadow: 1px 1px 10px 1px #50e6df inset;
       transition: padding-left 0.2s linear;
       padding-left: 60px; }
-    #about1 .card article button {
-      margin: 5% 30%;
+    #about .card button {
+      display: flex;
+      color: white;
+      margin: 5% auto;
       background: transparent; }
-      #about1 .card article button:hover {
+      #about .card button:hover {
         background: transparent;
         box-shadow: 1px 1px 7px 1px #50e6df inset; }
+
+.hidden {
+  display: none; }
 
 #skills {
   background-image: none;
   background-color: #ecf0f1;
   padding-bottom: 0;
-  padding: 5% 0; }
-  #skills ul {
-    list-style: none;
-    padding: 0; }
-  #skills .row {
-    margin: 0 auto;
-    padding: 20px 0; }
-  #skills .inner {
-    border: solid 1px;
-    border-radius: 5px;
-    margin: 10px 25px;
-    width: 250px;
-    -moz-box-shadow: 0 0 10px #888;
-    -webkit-box-shadow: 0 0 10px #888;
-    box-shadow: 0 0 10px #888;
-    transition: all .2s ease-in-out; }
-    #skills .inner:hover {
-      transform: scale(1.1);
-      transition: 0.5s;
-      overflow: hidden; }
-      #skills .inner:hover .fa-check {
-        -ms-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg); }
-      #skills .inner:hover .fa-spinner {
-        -ms-transform: rotate(3600deg);
-        -webkit-transform: rotate(3600deg);
-        transform: rotate(3600deg);
-        transition: 5s; }
-      #skills .inner:hover .fa-forward {
-        transform: translate(200px, 0);
-        transition: 2s; }
-  #skills .draw {
-    transition: color 0.25s; }
-    #skills .draw:before, #skills .draw:after {
-      border: 2px solid transparent;
-      width: 0;
-      height: 0; }
-    #skills .draw::before {
-      top: 0;
-      left: 0; }
-    #skills .draw::after {
-      bottom: 0;
-      right: 0; }
-    #skills .draw:hover {
-      color: #000; }
-    #skills .draw:hover::before, #skills .draw:hover::after {
-      width: 100%;
-      height: 100%; }
-    #skills .draw:hover::before {
-      border-top-color: #000;
-      border-right-color: #000;
-      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
-    #skills .draw:hover::after {
-      border-bottom-color: #000;
-      border-left-color: #000;
-      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
-  #skills .fa-check {
-    color: #27ae60;
-    transition: all .2s ease-in-out; }
-  #skills .fa-forward {
-    color: #8e44ad;
-    transition: 1s; }
-  #skills .fa-spinner {
-    color: #d35400; }
-  #skills .head {
-    line-height: 24px;
-    text-align: center;
-    font-weight: bold;
-    border-bottom: solid 1px;
-    border-radius: 5px 5px 0 0; }
-  #skills .know .head {
-    background-color: #27ae60; }
-  #skills .prog .head {
-    background-color: #d35400; }
-  #skills .want .head {
-    background-color: #8e44ad; }
-  #skills ul {
-    width: 200px;
-    margin: 0 auto; }
-    #skills ul li {
-      width: 200px;
-      margin: 10px;
-      text-align: left; }
-  #skills .prog div:nth-child(even) {
-    margin: 10vh auto; }
+  padding: 10% 0; }
+  #skills .row:first-of-type {
+    margin-bottom: 10%; }
+
+.skilss {
+  text-align: center;
+  margin-bottom: 20px;
+  display: block; }
+  .skilss img {
+    height: 70px;
+    width: auto; }
+  .skilss img, .skilss .prog {
+    cursor: context-menu;
+    transition: 0.5s; }
+    .skilss img:hover, .skilss .prog:hover {
+      transform: scale(1.2);
+      transition: 0.5s; }
+  .skilss .prog {
+    letter-spacing: -2px; }
+    .skilss .prog .prog0, .skilss .prog .c1.prog1, .skilss .prog .c2.prog1, .skilss .prog .c3.prog1, .skilss .prog .c4.prog1, .skilss .prog .c5.prog1, .skilss .prog .c6.prog1, .skilss .prog .c7.prog1, .skilss .prog .c8.prog1 {
+      font-size: 30px;
+      color: #808080; }
+    .skilss .prog .c1.prog1 {
+      color: #D7502B; }
+    .skilss .prog .c2.prog1 {
+      color: #C46B95; }
+    .skilss .prog .c3.prog1 {
+      color: #4A366C; }
+    .skilss .prog .c4.prog1 {
+      color: #061D2D; }
+    .skilss .prog .c5.prog1 {
+      color: #FCA51E; }
+    .skilss .prog .c6.prog1 {
+      color: #D8A035; }
+    .skilss .prog .c7.prog1 {
+      color: #13619B; }
+    .skilss .prog .c8.prog1 {
+      color: #0F558F; }
 
 .portfolio {
+  padding-top: 60px;
   background-color: #95a5a6;
   text-align: center;
   text-align: left; }
@@ -392,14 +353,19 @@ body {
           .portfolio .row div .photo .layer i[class*="fa"]:hover, .portfolio .row div .photo .layer i[class*="fa"]:hover:hover {
             background-color: #fff; }
   .portfolio .left {
-    background: #13171d;
-    padding-top: 40px; }
+    background: #1D3547;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    float: left;
+    width: 100px;
+    border-radius: 0 10px 10px 0; }
     .portfolio .left button {
       display: block;
       border-radius: 50%;
       border: none;
       background-color: #2C2B2B;
-      color: #13171d;
+      color: #fff;
       font-size: 30px;
       margin: 30px auto;
       width: 60px;
@@ -408,12 +374,38 @@ body {
       -moz-box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
       transition: 0.5s; }
+      .portfolio .left button:focus {
+        transition: 0.5s;
+        animation-name: pulse_animation;
+        animation-duration: 3s;
+        transform-origin: 70% 70%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        outline: none;
+        background-color: #13171D; }
+        .portfolio .left button:focus i {
+          transform: none; }
+
+@keyframes pulse_animation {
+  i {
+    transform: none; }
+  0% {
+    transform: scale(1); }
+  50% {
+    background-color: #2C2B2B; }
+  100% {
+    transform: scale(1); } }
       .portfolio .left button:hover {
         transform: scale(1.2);
-        transition: 0.5s; }
+        -ms-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+        transition: 2s; }
+  .portfolio .right {
+    padding-top: 80px; }
 
 #contact {
-  background-image: url(img/tlo.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(img/tlo.jpg);
   padding-bottom: 0;
   min-height: 100vh;
   padding: 5% 0; }
@@ -643,6 +635,27 @@ footer {
 .item-quantity, .item-decrement, .item-increment {
   text-align: center; }
 
+.backToTop {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 5s;
+  opacity: 1;
+  -webkit-transition: visability 5s, opacity 5s;
+  transition: visibility 5s, opacity 5s;
+  color: white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointers;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.75); }
+
 @media only screen and (max-width: 992px) {
   .slogan {
     margin: 25% 15vw !important; } }
@@ -651,6 +664,10 @@ footer {
   ul.navbar-right {
     background-color: rgba(0, 0, 0, 0.7); }
     ul.navbar-right li ul.dropdown-menu {
-      background-color: rgba(0, 0, 0, 0.7) !important; } }
+      background-color: rgba(0, 0, 0, 0.7) !important; }
+  .card {
+    margin: 0 auto;
+    transform: scale(0.8, 0.8);
+    max-width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */

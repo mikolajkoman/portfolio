@@ -10,11 +10,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="kontakt.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="kontakt.css">
 
 </head>
-<body style="display:none;">
+<body >
 	<section id="top" class="container-fluid jumbotron text-center">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
@@ -31,17 +31,17 @@
 				</div>
 				<div class="collapse navbar-collapse" id="navi">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#about1">O mnie</a></li>
+						<li><a href="#about">O mnie</a></li>
 						<li><a href="#skills">Umiejętności</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#contact">Kontakt</a></li>
-						<li class="dropdown">
+<!-- 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Język <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="#"><img src="img/pl.png" alt="my_photo" class="img-responsive photo">Polski</a></li>
 								<li id="dis"><a href="#"><img src="img/en.png" alt="my_photo" class="img-responsive photo">English</a></li>
 							</ul>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</div>
@@ -51,34 +51,31 @@
 
 		</div>
 	</section>
-	<section id="about1" class="contain container-fluid">
+	<section id="about" class="contain container-fluid">
 
-<div class="card">
-  <header>
-    <img src="http://mikolajkoman.pl/img/photo.jpg" alt="" />
-  </header>
-  <article>
-  <ul class="list">
+		<div class="card">
+			<header>
+				<img src="http://mikolajkoman.pl/img/photo.jpg" alt="" />
+			</header>
+			<article>
+				<ul class="list">
 
-                        <li><i class="fa fa-user" aria-hidden="true"></i>Mikołaj Koman</li>
-                        <li><i class="fa fa-calendar-o" aria-hidden="true"></i>24 lata</li>
-                       	<li><i class="fa fa-home" aria-hidden="true"></i>Kraków</li>
-                        <li><i class="fa fa-align-left" aria-hidden="true"></i>  Junior</li>
-                       <li><i class="fa fa-line-chart" aria-hidden="true"></i> < 1 rok doświadczenia</li>
-                    </ul>
-    <button type="button" class="btn btn-default">
-  <i class="fa fa-rocket" aria-hidden="true"></i> Dowiedz się więcej
-</button>
-  </article>
-</div>
-	</section>
-	<section id="about" class="hidden contain container-fluid">
-		<div class="row">
+					<li><i class="fa fa-user" aria-hidden="true"></i>Mikołaj Koman</li>
+					<li><i class="fa fa-calendar-o" aria-hidden="true"></i>24 lata</li>
+					<li><i class="fa fa-home" aria-hidden="true"></i>Kraków</li>
+					<li><i class="fa fa-align-left" aria-hidden="true"></i>  Junior</li>
+					<li><i class="fa fa-line-chart" aria-hidden="true"></i> < 1 rok doświadczenia</li>
+				</ul>
+		    	<button type="button" class="btn btn-default">
+		  			 Dowiedz się więcej
+				</button>
+			</article>
+			<div class="row hidden">
 
-			<div class=" col-sm-6 col-md-4 col-md-offset-2 diva" style="left:200px;">
+			<!-- <div class=" col-sm-6 col-md-4 col-md-offset-2 diva" style="display:none;">
 				<img src="img/photo.jpg" alt="my_photo" class="img-responsive photo">
-			</div>
-			<div class=" col-sm-6 col-md-5  diva1"  style="display:none;">
+			</div> -->
+			<div class="   diva1"  style="display:none;">
 			<h2>Cześć,</h2>
 				<p>
 				<b>Nazywam się Mikołaj Koman.</b> Mam 24 lata. Pochodzę z Krakowa. Prywatnie jestem szczęśliwym mężem i tatą. W wolnych chwilach w całości pochłania mnie świat kodowania lub bieganie po forcie bawiąc się <a data-target="#asg" data-toggle="modal">ASG</a> . Interesuję się Front-Endem, jest to moja pasja. To zainteresowanie powstało lata temu gdy budowałem koślawe strony używając tabel, ale rozkwitło na dobre niecały rok temu. Wtedy postanowiłem wziąć udział w Bootcampie, dla odświeżenia i zaktualizowania informacji na temat technologii i poznania dobrych zwyczajów programowania oraz nauczenia się czegoś nowego i być może znalezienia pracy.
@@ -88,11 +85,25 @@
 				Trudzę się również wprowadzaniem innowacyjnych rozwiązań na moją stronę oraz jej jeszcze większym usprawnieniem. Zgłębiam również wiedzę na temat JS i poznaje jego tajniki poprzez implementowanie miniejszych i więkrzych projektów dydaktyczno-moralizatorskich.
 
 				</p>
+				<button type="button" class="btn btn-default">
+		  			 To chyba tyle...
+				</button>
 			</div>
 		</div>
+		</div>
+				
 	</section>
 
 <section  id="skills" class="contain container-fluid "><!-- <a href="#"></a>	 -->	
+<ul>
+  <li><a href="#" class="round green">Znam i używam<span class="round">Tu znajdziesz technologie i narzędzia którymi się posługuję.</span></a></li>
+  <li><a href="#" class="round red">W trakcie<span class="round">Tu znajdziesz info czym obecnie wypełniam mój wolny czas. </span></a></li>
+	<li><a href="#" class="round yellow">Cele na przyszłość<span class="round">Tu spisałem tematy do nauki w najbliższej przyszłości.</span></a></li>
+</ul> 
+<!-- 	<div id="ballWrapper">
+		<div id="ball"></div>
+		<div id="ballShadow"></div>
+	</div>
 	<div class="container row">
 		<div class="col-md-4 know"  style="display:none;">
 			<div class="inner">
@@ -145,8 +156,8 @@
 			    </div>
 			</div>
 		</div>
-	</div>	
-<!-- 		<div class="row">
+	</div>	 -->
+		<!-- <div class="row">
 			<div class="col-sm-6 col-md-3 skilss">
 				<img src="img/HTML5.png" alt="html5_img">
 				<div class="prog">
@@ -262,8 +273,8 @@
  					</span>
 				</div>
 			</div>
-		</div> -->
-<!-- 
+		</div>
+
 	<div class="contain2">
 		<div class="circle">
 			<div class="circle2">
@@ -298,24 +309,26 @@
 	</div>
 	<div class="container2">
 	</div> -->
-
+ 
 	</section>
 	
 	<section id="portfolio" class="contain container-fluid portfolio"><a href="#"></a>
+<!-- 	<h2>portfolio</h2>
 		<div class=" row">
-		<div class="col-md-1 left">
-  <button><i class="fa fa-eercast" aria-hidden="true"></i></button>
-  <button><i class="fa fa-clone" aria-hidden="true"></i></button>
-  <button><i class="fa fa-flask" aria-hidden="true"></i></button>
-</div>
+		<div class=" left">
+			<button title="Strona"><i class="fa fa-eercast" aria-hidden="true"></i></button>
+			<button title="Projekty"><i class="fa fa-clone" aria-hidden="true"></i></button>
+			<button title="Labolatorium"><i class="fa fa-flask" aria-hidden="true"></i></button>
 
-<div class="col-md-11 right">
-   <h2>Left side Navigation bar (Fixed)</h2>
-   
-   <p>Left side Navigation</p>
- </div>
-</div>
-<!-- 		<div class="container">
+		</div>
+
+<div class="right">
+   <h2>Right</h2>
+   <p class="aa"></p>
+   <p class="aaa"></p>
+   <p class="aaaa"></p>
+</div> -->
+		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="photo p1">
@@ -404,7 +417,7 @@
 				</div>
 			</div>
 					
-		</div> -->
+		</div>
 	</section>
 	<section id="contact" class="contain container-fluid">
 		<h2>Kontakt</h2>
@@ -598,7 +611,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12  col-md-4">
-    				<p>kontakt@mikolaj.koman.pl</p>
+    				<p>kontakt@mikolajkoman.pl</p>
     			</div>
 				<div class="col-sm-12  col-md-4">
     				<p>Copyright &copy; 2016-2017 mikolajkoman.pl</p>
@@ -631,8 +644,8 @@
 
 </script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="main.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

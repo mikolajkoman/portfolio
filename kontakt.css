@@ -15,17 +15,17 @@
             .form-success{background-color:#6cbf40;padding:10px;font-size:15px;color:#ffffff;line-height:1.4em;}
             #contactform{margin-bottom: 30px;}
             #contactform .form-error{background-color:#ff6600;padding:10px;font-size:15px;color:#ffffff;margin-bottom:15px;line-height:1.4em;}
-            #contactform fieldset{width:100%;}
-            #contactform fieldset label{display:block;font-size:15px;color:#46494f;margin-bottom:12px;}
+            #contactform fieldset{width:100%; background-color: rgba(0, 0, 0, 0.3); border-radius: 10px; padding: 20px;}
+            #contactform fieldset label{display:block;font-size:15px;color:#ffff00;margin-bottom:12px;}
             #contactform fieldset input[type=text],
-            #contactform fieldset input[type=email]{font-family:Roboto,sans-serif;color:#ffffff;font-size:14px;border:1px solid #d8dee5;box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);padding:9px 14px;width:460px;max-width:100%;box-sizing:border-box;-moz-box-sizing:border-box;height:40px;margin-bottom:10px; background-color: transparent;}
+            #contactform fieldset input[type=email]{font-family:Roboto,sans-serif;color:#ffffff;font-size:14px;border:1px solid #d8dee5; border-radius: 10px; box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);padding:9px 14px;width:460px;max-width:100%;box-sizing:border-box;-moz-box-sizing:border-box;height:40px;margin-bottom:10px; background-color: transparent;}
             #contactform fieldset input[type=text]:hover,#contactform fieldset input[type=email]:hover{color:#ffffff;border-color:#acb4bd;}
             #contactform fieldset input[type=text]:focus,#contactform fieldset input[type=email]:focus{color:#ffffff;border-color:#196abc;}
-            #contactform fieldset textarea{font-family:Lato,sans-serif;color:#ffffff;font-size:14px;border:1px solid #d8dee5;box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);padding:9px 14px;width:460px;max-width:100%;box-sizing:border-box;-moz-box-sizing:border-box;height:160px;margin-bottom:10px;resize:none; background-color: transparent;}
+            #contactform fieldset textarea{font-family:Lato,sans-serif;color:#ffffff;font-size:14px;border:1px solid #d8dee5; border-radius: 10px; box-shadow:0px 1px 3px rgba(0, 0, 0, 0.1);padding:9px 14px;width:460px;max-width:100%;box-sizing:border-box;-moz-box-sizing:border-box;height:160px;margin-bottom:10px;resize:none; background-color: transparent;}
             #contactform fieldset textarea:hover{color:#ffffff;border-color:#acb4bd;}
             #contactform fieldset textarea:focus{color:#ffffff;border-color:#196abc;}
             #contactform fieldset .form-field-error{color:#ff6600;font-style:italic;font-size:12px;margin-bottom:15px;margin-top:-5px;line-height:1.3em;}
-            #contactform fieldset input[type=submit]{background:#1969ba;background:-webkit-linear-gradient(top, #1969ba 0%, #13508e 100%);background:linear-gradient(to bottom, #1969ba 0%, #13508e 100%);border:none;font-size:14px;font-family:Lato,sans-serif;color:#ffffff;cursor:pointer;padding:9px 14px;box-sizing:border-box;-moz-box-sizing:border-box;}
+            #contactform fieldset input[type=submit]{border-radius: 15px;background:#1969ba;background:-webkit-linear-gradient(top, #1969ba 0%, #13508e 100%);background:linear-gradient(to bottom, #1969ba 0%, #13508e 100%);border:none;font-size:14px;font-family:Lato,sans-serif;color:#ffffff;cursor:pointer;padding:9px 14px;box-sizing:border-box;-moz-box-sizing:border-box;}
             #contactform fieldset input[type=submit]:hover{background:#1969ba;background:-webkit-linear-gradient(top, #1969ba 0%, #053565 100%);background:linear-gradient(to bottom, #1969ba 0%, #053565 100%);}
             #contactform fieldset input[type=submit]:active{background:#053565;background:-webkit-linear-gradient(top, #053565 0%, #1969ba 100%);background:linear-gradient(to bottom, #053565 0%, #1969ba 100%);}
             #contactform fieldset input[type=hidden]{display:none;}

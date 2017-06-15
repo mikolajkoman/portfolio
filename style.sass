@@ -164,8 +164,9 @@ body
 	@extend .jumbotron
 	background-image: $bg-image1
 	padding-bottom: 0
-	padding: 10% 0
+	padding: 80px 0
 	padding-bottom: 50px
+	
 	h2
 		display: block
 		font-weight: 800 !important
@@ -176,17 +177,22 @@ body
 	img
 		margin: 0 auto
 		margin-top: 20px
-		width: 250px
-		height: 250px
+		margin-bottom: 50px
+		width: 200px
+		height: 200px
 		border-radius: 50%
 		-webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
 		-moz-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
 		box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
 	.diva1
-
+		margin: 10px
+		margin-top: 20px
 		-webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
 		-moz-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
 		box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
+		padding: 10px
+		box-sizing: border-box
+		text-align: justify
 	p
 		color: $main-text-color
 		border-radius: 15px
@@ -198,17 +204,14 @@ body
 		cursor: help
 		color: #fff
 	
-.hidden
-	visability: hidden
-#about1
-	@extend .jumbotron
-	background-image: $bg-image1
+
 	.card
+		display: none
 		padding: 1vw
-		margin: 75px auto
+		margin: 0 auto
 		background: #000
 		border-radius: 10px
-		width: 400px
+		width: 800px
 		height: auto
 		-webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
 		-moz-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75)
@@ -217,8 +220,11 @@ body
 			display: block
 			text-align: center
 			margin-bottom: 20px
+			
 			img
+				display: inline-block
 				margin: 0 auto
+				margin-top: 5px
 				width: 150px
 				height: 150px
 				border-radius: 50%
@@ -252,123 +258,177 @@ body
 				box-shadow: 1px 1px 10px 1px #50e6df inset
 				transition: padding-left 0.2s linear
 				padding-left: 60px
-			button
-				margin: 5% 30%
-				background: transparent
-				&:hover
-					background: transparent 
-					box-shadow: 1px 1px 7px 1px #50e6df inset
-
+		button
+			display: flex
+			color: white
+			margin: 5% auto
+			background: transparent
+			&:hover
+				background: transparent 
+				box-shadow: 1px 1px 7px 1px #50e6df inset
+.hidden
+	// visability: hidden
+	display: none
 #skills
 	@extend .jumbotron
 	background-image: none
 	background-color: #ecf0f1
 	padding-bottom: 0
-	padding: 5% 0
-	ul
-		list-style: none
-		padding: 0
+	padding: 10% 0
+	.row:first-of-type
+		margin-bottom: 10%
+// #skills
+// 	@extend .jumbotron
+// 	background-image: none
+// 	background-color: #ecf0f1
+// 	padding-bottom: 0
+// 	padding: 5% 0
+// 	ul
+// 		list-style: none
+// 		padding: 0
 
-	.row
-		margin: 0 auto
-		padding: 20px 0
+// 	.row
+// 		margin: 0 auto
+// 		padding: 20px 0
 		
-	.inner
-		border: solid 1px
-		border-radius: 5px
-		margin: 10px 25px 
-		// margin: 10vh auto 
-		width: 250px
-		-moz-box-shadow: 0 0 10px #888
-		-webkit-box-shadow: 0 0 10px #888
-		box-shadow: 0 0 10px #888
-		transition: all .2s ease-in-out
-		&:hover
-			transform: scale(1.1)
-			transition: 0.5s
-			overflow: hidden
-			.fa-check
-				-ms-transform: rotate(360deg) /* IE 9 */
-				-webkit-transform: rotate(360deg) /* Chrome, Safari, Opera */
-				transform: rotate(360deg)
-			.fa-spinner
-				-ms-transform: rotate(3600deg) /* IE 9 */
-				-webkit-transform: rotate(3600deg) /* Chrome, Safari, Opera */
-				transform: rotate(3600deg)
-				transition: 5s
-			.fa-forward
-				transform: translate(200px,0)
-				transition: 2s
-	.draw 
-		transition: color 0.25s
-		&:before,
-		&:after
-			border: 2px solid transparent
-			width: 0
-			height: 0
+	// .inner
+	// 	border: 0
+	// 	border-radius: 5px
+	// 	margin: 10px 25px 
+	// 	// margin: 10vh auto 
+	// 	width: 250px
+	// 	-moz-box-shadow: 0 0 10px #888
+	// 	-webkit-box-shadow: 0 0 10px #888
+	// 	box-shadow: 0 0 10px #888
+	// 	transition: all .2s ease-in-out
+	// 	&:hover
+	// 		transform: scale(1.1)
+	// 		transition: 0.5s
+	// 		overflow: hidden
+	// 		.fa-check
+	// 			-ms-transform: rotate(360deg) /* IE 9 */
+	// 			-webkit-transform: rotate(360deg) /* Chrome, Safari, Opera */
+	// 			transform: rotate(360deg)
+	// 		.fa-spinner
+	// 			-ms-transform: rotate(3600deg) /* IE 9 */
+	// 			-webkit-transform: rotate(3600deg) /* Chrome, Safari, Opera */
+	// 			transform: rotate(3600deg)
+	// 			transition: 5s
+	// 		.fa-forward
+	// 			transform: translate(200px,0)
+	// 			transition: 2s
+	// .draw
+	// 	background-color: rgba(0, 0, 0, 0.6)
+	// 	transition: color 0.25s
+	// 	&:before,
+	// 	&:after
+	// 		border: 2px solid transparent
+	// 		width: 0
+	// 		height: 0
 		
-		// This covers the top & right borders (expands right, then down)
-		&::before 
-			top: 0
-			left: 0
-		// And this the bottom & left borders (expands left, then up)
-		&::after
-			bottom: 0
-			right: 0
-		&:hover 
-			color: #000
+	// 	// This covers the top & right borders (expands right, then down)
+	// 	&::before 
+	// 		top: 0
+	// 		left: 0
+	// 	// And this the bottom & left borders (expands left, then up)
+	// 	&::after
+	// 		bottom: 0
+	// 		right: 0
+	// 	&:hover 
+	// 		color: #000
 		
-		// Hover styles
-		&:hover::before,
-		&:hover::after
-			width: 100%
-			height: 100%
+	// 	// Hover styles
+	// 	&:hover::before,
+	// 	&:hover::after
+	// 		width: 100%
+	// 		height: 100%
 		
-		&:hover::before 
-			border-top-color: #000 // Make borders visible
-			border-right-color: #000
-			transition: width 0.25s ease-out, // Width expands first
-			height 0.25s ease-out 0.25s // And then height
+	// 	&:hover::before 
+	// 		border-top-color: #000 // Make borders visible
+	// 		border-right-color: #000
+	// 		transition: width 0.25s ease-out, // Width expands first
+	// 		height 0.25s ease-out 0.25s // And then height
 		
-		&:hover::after 
-			border-bottom-color: #000 // Make borders visible
-			border-left-color: #000
-			transition: border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
-			width 0.25s ease-out 0.5s, // And then exanding width
-			height 0.25s ease-out 0.75s // And finally height
+	// 	&:hover::after 
+	// 		border-bottom-color: #000 // Make borders visible
+	// 		border-left-color: #000
+	// 		transition: border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+	// 		width 0.25s ease-out 0.5s, // And then exanding width
+	// 		height 0.25s ease-out 0.75s // And finally height
 
 		
 
-	.fa-check
-		color: #27ae60
-		transition: all .2s ease-in-out
-	.fa-forward
-		color: #8e44ad
-		transition: 1s
-	.fa-spinner
-		color: #d35400
-	.head
-		line-height: 24px
-		text-align: center
-		font-weight: bold
-		border-bottom: solid 1px
-		border-radius: 5px 5px 0 0
-	.know .head
-		background-color: #27ae60
-	.prog .head
-		background-color: #d35400
-	.want .head
-		background-color: #8e44ad
-	ul
-		width: 200px
-		margin: 0 auto
-		// padding: 0 20%
-		li
-			width: 200px
-			margin: 10px
-			text-align: left
-	.prog div:nth-child(even)
-		margin: 10vh auto
+	// .fa-check
+	// 	color: #27ae60
+	// 	transition: all .2s ease-in-out
+	// .fa-forward
+	// 	color: #8e44ad
+	// 	transition: 1s
+	// .fa-spinner
+	// 	color: #d35400
+	// .head
+	// 	line-height: 24px
+	// 	text-align: center
+	// 	font-weight: bold
+	// 	border-bottom: solid 1px
+	// 	border-radius: 5px 5px 0 0
+	// .know .head
+	// 	background-color: #27ae60
+	// .prog .head
+	// 	background-color: #d35400
+	// .want .head
+	// 	background-color: #8e44ad
+	// ul
+	// 	width: 200px
+	// 	margin: 0 auto
+	// 	// padding: 0 20%
+	// 	li
+	// 		width: 200px
+	// 		margin: 10px
+	// 		text-align: left
+	// .prog div:nth-child(even)
+	// 	margin: 10vh auto
+	
+	// #ballWrapper 
+	// 	width: 140px
+	// 	height: 300px
+	// 	position: relative
+	// 	left: 50%
+	// 	top: 50%
+	// 	margin: -150px 0 0 -70px
+	// #ball
+	// 	width: 140px
+	// 	height: 140px
+	// 	border-radius: 70px
+	// 	background: linear-gradient(top,  rgba(187,187,187,1) 0%,rgba(119,119,119,1) 99%)
+	// 	box-shadow: inset 0 -5px 15px rgba(255,255,255,0.4),
+	// 	inset -2px -1px 40px rgba(0,0,0,0.4), 0 0 1px #000
+	// 	&:hover
+	// 		cursor: pointer
+	// 	&:after
+	// 		content: ""
+	// 		width: 80px 
+	// 		height: 40px 
+	// 		position: relative
+	// 		left: 30px
+	// 		top: 10px  
+	// 		background: linear-gradient(top,  rgba(232,232,232,1) 0%,rgba(232,232,232,1) 1%,rgba(255,255,255,0) 100%)
+	// 		border-radius: 40px / 20px
+	// 	#ballShadow
+	// 		width: 60px
+	// 		height: 75px
+	// 		position: absolute
+	// 		z-index: 0
+	// 		bottom: 0
+	// 		left: 50%
+	// 		margin-left: -30px
+	// 		background: rgba(20, 20, 20, .1)
+	// 		box-shadow: 0px 0 20px 35px rgba(20,20,20,.1)
+	// 		border-radius: 30px / 40px 
+
+
+
+
 
 		// 	.row:first-of-type
 // 		margin-bottom: 10%
@@ -479,53 +539,186 @@ body
 // 		height: 200px
 // 		background: #ecf0f1
 // 		border: solid #70869E
-// .skilss
+	@-moz-keyframes rotate 
+		0% transform: rotate(0deg)
+		100% transform: rotate(-360deg)
 
-// 	text-align: center
-// 	margin-bottom: 20px
-// 	display: block
-// 	img
-// 		height: 70px
-// 		width: auto
-// 	img, .prog
-// 		cursor: context-menu
-// 		transition: 0.5s
-// 		&:hover
-// 			transform: scale(1.20)
-// 			transition: 0.5s
-// 	.prog
-// 		letter-spacing: -2px
-// 		.prog0
-// 			font-size: 30px
-// 			color: #808080
-// 		.c1.prog1
-// 			@extend .prog0
-// 			color: #D7502B
-// 		.c2.prog1
-// 			@extend .prog0
-// 			color: #C46B95
-// 		.c3.prog1
-// 			@extend .prog0
-// 			color: #4A366C
-// 		.c4.prog1
-// 			@extend .prog0
-// 			color: #061D2D
-// 		.c5.prog1
-// 			@extend .prog0
-// 			color: #FCA51E
-// 		.c6.prog1
-// 			@extend .prog0
-// 			color: #D8A035
-// 		.c7.prog1
-// 			@extend .prog0
-// 			color: #13619B
-// 		.c8.prog1
-// 			@extend .prog0
-// 			color: #0F558F
+	@-webkit-keyframes rotate 
+		0% transform: rotate(0deg)
+		100% transform: rotate(-360deg)
+	
+
+	@-o-keyframes rotate 
+		0% transform: rotate(0deg)
+		100% transform: rotate(-360deg)
+	
+
+	@keyframes rotate 
+		0% transform: rotate(0deg)
+		100% transform: rotate(-360deg)
+
+	ul
+		margin: 30px auto
+		text-align: center
+	
+		li 
+			list-style: none
+			position: relative
+			display: inline-block
+			width: 150px
+			height: 150px
+			margin: 50px
+			.round 
+				display: block
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				padding-top: 30px		
+				text-decoration: none		
+				text-align: center
+				font-size: 25px		
+				text-shadow: 0 1px 0 rgba(255,255,255,.7)
+				letter-spacing: -.065em
+				font-family: "Hammersmith One", sans-serif
+				-webkit-transition: all .25s ease-in-out
+				-o-transition: all .25s ease-in-out
+				-moz-transition: all .25s ease-in-out
+				transition: all .25s ease-in-out
+				box-shadow: 2px 2px 7px rgba(0,0,0,.2)
+				border-radius: 300px
+				z-index: 1
+				border-width: 4px
+				border-style: solid
+			
+
+			.round:hover 
+				width: 130%
+				height: 130%
+				left: -15%
+				top: -15%
+				font-size: 33px
+				padding-top: 38px
+				-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3)
+				-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3)
+				-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3)
+				box-shadow: 5px 5px 10px rgba(0,0,0,.3)
+				z-index: 2
+				border-size: 10px
+				-webkit-transform: rotate(-360deg)
+				-moz-transform: rotate(-360deg)
+				-o-transform: rotate(-360deg)
+				transform: rotate(-360deg)
+	
+
+	a.red 
+		background-color: orange
+		color: rgba(133,32,28,1)
+		border-color: rgba(133,32,28,.2)
+	
+
+	a.red:hover 
+		color: rgba(239,57,50,1)
+	
+
+	a.green 
+		background-color: rgba(1,151,171,1)
+		color: rgba(0,63,71,1)
+		border-color: rgba(0,63,71,.2)
+	
+
+	a.green:hover 
+		color: rgba(1,151,171,1)
+	
+
+	a.yellow 
+		background-color: rgba(252,227,1,1)
+		color: rgba(153,38,0,1)
+		border-color: rgba(153,38,0,.2)
+	
+
+	a.yellow:hover 
+		color: rgba(252,227,1,1)
+	
+
+	.round span.round 
+		display: block
+		opacity: 0
+		-webkit-transition: all .5s ease-in-out
+		-moz-transition: all .5s ease-in-out
+		-o-transition: all .5s ease-in-out
+		transition: all .5s ease-in-out
+		font-size: 1px
+		border: none
+		padding: 40% 20% 0 20%
+		color: #fff
+	
+
+	.round span:hover 
+		opacity: .85
+		font-size: 16px
+		-webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5)
+		-moz-text-shadow: 0 1px 1px rgba(0,0,0,.5)
+		-o-text-shadow: 0 1px 1px rgba(0,0,0,.5)
+		text-shadow: 0 1px 1px rgba(0,0,0,.5)
+	
+	.green span 
+		background: rgba(0,63,71,.7)
+	.red span 
+		background: rgba(133,32,28,.7)
+	.yellow span 
+		background: rgba(161,145,0,.7)
+
+	
+.skilss
+
+	text-align: center
+	margin-bottom: 20px
+	display: block
+	img
+		height: 70px
+		width: auto
+	img, .prog
+		cursor: context-menu
+		transition: 0.5s
+		&:hover
+			transform: scale(1.20)
+			transition: 0.5s
+	.prog
+		letter-spacing: -2px
+		.prog0
+			font-size: 30px
+			color: #808080
+		.c1.prog1
+			@extend .prog0
+			color: #D7502B
+		.c2.prog1
+			@extend .prog0
+			color: #C46B95
+		.c3.prog1
+			@extend .prog0
+			color: #4A366C
+		.c4.prog1
+			@extend .prog0
+			color: #061D2D
+		.c5.prog1
+			@extend .prog0
+			color: #FCA51E
+		.c6.prog1
+			@extend .prog0
+			color: #D8A035
+		.c7.prog1
+			@extend .prog0
+			color: #13619B
+		.c8.prog1
+			@extend .prog0
+			color: #0F558F
 
 
 
 .portfolio
+	padding-top: 60px
 	background-color: #95a5a6
 	text-align: center
 	text-align: left
@@ -612,14 +805,19 @@ body
 						&:hover 
 							background-color: #fff
 	.left
-		background: #13171d
-		padding-top: 40px
+		background: #1D3547
+		padding-top: 30px
+		padding-bottom: 30px
+		position: relative
+		float: left
+		width: 100px
+		border-radius: 0 10px 10px 0
 		button
 			display: block
 			border-radius: 50%
 			border: none
 			background-color: #2C2B2B
-			color: #13171d
+			color: #fff
 			font-size: 30px
 			margin: 30px auto
 			width: 60px
@@ -628,14 +826,58 @@ body
 			-moz-box-shadow: 0px 0px 5px 10px rgba(0,0,0,0.75)
 			box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75)
 			transition: 0.5s
+
+			&:focus
+				transition: 0.5s
+				animation-name: pulse_animation
+				animation-duration: 3s
+				transform-origin: 70% 70%
+				animation-iteration-count: infinite
+				animation-timing-function: linear
+				outline: none
+				// transform: scale(1.20)
+				background-color: #13171D
+				i
+					transform: none
+				@keyframes pulse_animation
+					i
+						transform: none
+					0% 
+						transform: scale(1)
+					// 10% 
+					// 	transform: scale(1.02)
+					// 20% 
+					// 	transform: scale(1.04)
+					// 30% 
+					// 	transform: scale(1.06)
+					// 40%
+					// 	transform: scale(1.08)
+					50%
+						background-color: #2C2B2B
+					// 60%
+					// 	transform: scale(1.08)
+					// 70%
+					// 	transform: scale(1.06)
+					// 80%
+					// 	transform: scale(1.04)
+					// 90%
+					// 	transform: scale(1.02)
+					100%
+						transform: scale(1)
 			&:hover
 				transform: scale(1.20)
-				transition: 0.5s
+				-ms-transform: rotate(30deg) /* IE 9 */
+				-webkit-transform: rotate(30deg) /* Chrome, Safari, Opera */
+				transform: rotate(30deg)
+				transition: 2s
 
 	.right
+		padding-top: 80px
+
+
 #contact 
 	@extend .jumbotron
-	background-image: $bg-image1
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%),  $bg-image1
 	padding-bottom: 0
 	min-height: 100vh
 	padding: 5% 0
@@ -875,6 +1117,30 @@ footer
 .item-quantity, .item-decrement, .item-increment 
 	text-align: center
 
+.backToTop 
+	margin: 0 auto
+	width: 60px 
+	height: 60px 
+	border: none
+	outline: none
+	border-radius: 50%
+	background: rgba(0, 0, 0, 0.6)
+	transition: 5s
+	opacity: 1
+	-webkit-transition: visability 5s, opacity 5s
+	transition: visibility 5s, opacity 5s
+	color: white
+	position: fixed
+	bottom: 30px
+	right: 30px
+	cursor: pointers
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75)
+	-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75)
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75)
+
+
+
+
 @media only screen and (max-width: 992px)
 
 	.slogan
@@ -887,3 +1153,10 @@ footer
 		li
 			ul.dropdown-menu
 				background-color: rgba(0, 0, 0, 0.7) !important
+
+	@extend #about1
+	.card
+		margin: 0 auto
+		transform: scale(0.8,0.8)
+		max-width: 95%
+
